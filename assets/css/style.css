@@ -1,0 +1,582 @@
+/**
+ * Agence Web France - Styles Personnalisés
+ * Design moderne, responsive et optimisé
+ * Mobile-first approach
+ */
+
+/* ===========================
+   Variables CSS
+   =========================== */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --white-color: #ffffff;
+    --transition-speed: 0.3s;
+    --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --box-shadow-lg: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* ===========================
+   Reset et Base
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    overflow-x: hidden;
+}
+
+/* ===========================
+   Header Sticky
+   =========================== */
+.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all var(--transition-speed) ease;
+    background-color: var(--white-color);
+}
+
+.header-sticky.scrolled {
+    box-shadow: var(--box-shadow-lg);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: transform var(--transition-speed) ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: color var(--transition-speed) ease;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Effet de soulignement au survol */
+.nav-link:not(.btn)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all var(--transition-speed) ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:not(.btn):hover::after {
+    width: 80%;
+}
+
+/* ===========================
+   Section Hero
+   =========================== */
+.hero-section {
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.hero-image-placeholder {
+    background: var(--white-color);
+    border-radius: 20px;
+    padding: 4rem;
+    box-shadow: var(--box-shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animation de flottement */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* ===========================
+   Boutons CTA
+   =========================== */
+.cta-button {
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-speed) ease;
+    border: none;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-lg);
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--box-shadow-lg);
+}
+
+/* ===========================
+   Sections
+   =========================== */
+.section-padding {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   Cards Services
+   =========================== */
+.service-card {
+    transition: all var(--transition-speed) ease;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-lg) !important;
+}
+
+.service-icon {
+    transition: all var(--transition-speed) ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.service-card:hover .service-icon i {
+    animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* ===========================
+   Section À Propos
+   =========================== */
+.about-image-placeholder {
+    background: var(--light-color);
+    border-radius: 20px;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.stat-box {
+    background: var(--light-color);
+    border-radius: 10px;
+    transition: all var(--transition-speed) ease;
+}
+
+.stat-box:hover {
+    background: var(--white-color);
+    box-shadow: var(--box-shadow);
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Portfolio
+   =========================== */
+.portfolio-card {
+    transition: all var(--transition-speed) ease;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-lg) !important;
+}
+
+.portfolio-image {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    transition: transform var(--transition-speed) ease;
+}
+
+.portfolio-card:hover .placeholder-image {
+    transform: scale(1.1);
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+}
+
+/* ===========================
+   Section CTA
+   =========================== */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* ===========================
+   Formulaire de Contact
+   =========================== */
+.form-control,
+.form-select {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.contact-info .contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-speed) ease;
+}
+
+.contact-info > div:hover .contact-icon {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.contact-info > div:hover .contact-icon i {
+    color: var(--white-color) !important;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+.footer {
+    position: relative;
+}
+
+.hover-link {
+    transition: all var(--transition-speed) ease;
+    position: relative;
+}
+
+.hover-link:hover {
+    color: var(--white-color) !important;
+    padding-left: 5px;
+}
+
+/* ===========================
+   Bouton Scroll to Top
+   =========================== */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-speed) ease;
+    z-index: 999;
+    box-shadow: var(--box-shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn:hover {
+    background-color: #0a58ca;
+    transform: translateY(-5px);
+}
+
+/* ===========================
+   Animations d'entrée
+   =========================== */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   Responsive Design - Mobile First
+   =========================== */
+
+/* Tablettes (768px et plus) */
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop (992px et plus) */
+@media (min-width: 992px) {
+    .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+}
+
+/* Mobile (max 767px) */
+@media (max-width: 767px) {
+    .section-padding {
+        padding: 3rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        padding-top: 100px;
+    }
+
+    .hero-image-placeholder {
+        padding: 2rem;
+        min-height: 250px;
+    }
+
+    .display-4 {
+        font-size: 2rem !important;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .scroll-top-btn {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Très petits écrans (max 576px) */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .display-5 {
+        font-size: 2rem !important;
+    }
+
+    .cta-section .display-5 {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* ===========================
+   Utilitaires
+   =========================== */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale {
+    transition: transform var(--transition-speed) ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Accessibilité
+   =========================== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus visible pour l'accessibilité au clavier */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* ===========================
+   Mode sombre (optionnel)
+   =========================== */
+@media (prefers-color-scheme: dark) {
+    /* Désactivé par défaut, peut être activé si souhaité */
+}
+
+/* ===========================
+   Print styles
+   =========================== */
+@media print {
+    .header-sticky,
+    .scroll-top-btn,
+    .cta-section,
+    footer {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
