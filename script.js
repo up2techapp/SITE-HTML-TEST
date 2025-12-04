@@ -349,13 +349,182 @@ if (logo) {
 }
 
 // ===========================
+// Annuaire - Recherche de villes
+// ===========================
+let villesData = null;
+let departementsData = null;
+
+// Charger les données des villes
+async function loadVillesData() {
+    try {
+        const response = await fetch('villes.json');
+        villesData = await response.json();
+        console.log(`✓ ${villesData.length} villes chargées`);
+    } catch (error) {
+        console.error('Erreur chargement villes:', error);
+    }
+}
+
+// Charger les données des départements
+async function loadDepartementsData() {
+    try {
+        const response = await fetch('departements.json');
+        departementsData = await response.json();
+        console.log(`✓ ${departementsData.length} départements chargés`);
+    } catch (error) {
+        console.error('Erreur chargement départements:', error);
+    }
+}
+
+// Initialiser la recherche de villes
+function initCitySearch() {
+    const searchInput = document.getElementById('citySearch');
+    const searchResults = document.getElementById('searchResults');
+
+    if (!searchInput || !searchResults) return;
+
+    let searchTimeout;
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+
+        clearTimeout(searchTimeout);
+
+        if (query.length < 2) {
+            searchResults.classList.remove('show');
+            searchResults.innerHTML = '';
+            return;
+        }
+
+        searchTimeout = setTimeout(() => {
+            if (!villesData) {
+                searchResults.innerHTML = '<div class="p-3 text-muted">Chargement...</div>';
+                searchResults.classList.add('show');
+                return;
+            }
+
+            // Rechercher les villes correspondantes
+            const results = villesData
+                .filter(v =>
+                    v.name.toLowerCase().includes(query) ||
+                    v.zip.includes(query)
+                )
+                .slice(0, 10); // Limiter à 10 résultats
+
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="p-3 text-muted">Aucune ville trouvée</div>';
+                searchResults.classList.add('show');
+                return;
+            }
+
+            // Afficher les résultats
+            searchResults.innerHTML = results.map(v => `
+                <a href="villes/agence-web-${v.slug}.html" class="search-result-item text-decoration-none">
+                    <span class="city-name">${v.name}</span>
+                    <span class="city-zip">${v.zip}</span>
+                </a>
+            `).join('');
+            searchResults.classList.add('show');
+        }, 300);
+    });
+
+    // Fermer les résultats si on clique ailleurs
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.remove('show');
+        }
+    });
+
+    // Navigation clavier
+    searchInput.addEventListener('keydown', function(e) {
+        const items = searchResults.querySelectorAll('.search-result-item');
+        const activeItem = searchResults.querySelector('.search-result-item.active');
+        let index = Array.from(items).indexOf(activeItem);
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (index < items.length - 1) {
+                items.forEach(i => i.classList.remove('active'));
+                items[index + 1].classList.add('active');
+                items[index + 1].scrollIntoView({ block: 'nearest' });
+            }
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (index > 0) {
+                items.forEach(i => i.classList.remove('active'));
+                items[index - 1].classList.add('active');
+                items[index - 1].scrollIntoView({ block: 'nearest' });
+            }
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (activeItem) {
+                window.location.href = activeItem.getAttribute('href');
+            } else if (items.length > 0) {
+                window.location.href = items[0].getAttribute('href');
+            }
+        }
+    });
+}
+
+// Initialiser les liens de départements
+function initDeptLinks() {
+    const deptLinks = document.querySelectorAll('.dept-link');
+    const modal = document.getElementById('deptModal');
+    const modalTitle = document.getElementById('deptModalTitle');
+    const modalContent = document.getElementById('deptModalContent');
+
+    if (!modal || !modalTitle || !modalContent) return;
+
+    const bsModal = new bootstrap.Modal(modal);
+
+    deptLinks.forEach(link => {
+        link.addEventListener('click', async function(e) {
+            e.preventDefault();
+            const deptCode = this.getAttribute('data-dept');
+            const deptName = this.textContent.trim();
+
+            modalTitle.textContent = deptName;
+            modalContent.innerHTML = '<div class="col-12 text-center"><div class="spinner-border text-primary" role="status"></div></div>';
+            bsModal.show();
+
+            // Charger les données si pas encore fait
+            if (!departementsData) {
+                await loadDepartementsData();
+            }
+
+            // Trouver le département
+            const dept = departementsData.find(d => d.code === deptCode);
+
+            if (dept && dept.villes) {
+                modalContent.innerHTML = dept.villes.map(v => `
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="villes/agence-web-${v.slug}.html">${v.name}</a>
+                    </div>
+                `).join('');
+            } else {
+                modalContent.innerHTML = '<div class="col-12 text-center text-muted">Aucune ville trouvée</div>';
+            }
+        });
+    });
+}
+
+// Charger les données et initialiser au démarrage
+document.addEventListener('DOMContentLoaded', function() {
+    loadVillesData();
+    initCitySearch();
+    initDeptLinks();
+});
+
+// ===========================
 // Exports pour modules (si nécessaire)
 // ===========================
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         showNotification,
         initScrollEffects,
-        initSmoothScroll
+        initSmoothScroll,
+        initCitySearch,
+        initDeptLinks
     };
 }
 

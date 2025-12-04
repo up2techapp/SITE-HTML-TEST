@@ -1,5 +1,110 @@
 [
   {
+    "name": "Paris",
+    "zip": "75000",
+    "slug": "paris-75000"
+  },
+  {
+    "name": "Paris 1er",
+    "zip": "75001",
+    "slug": "paris-1er-75001"
+  },
+  {
+    "name": "Paris 2e",
+    "zip": "75002",
+    "slug": "paris-2e-75002"
+  },
+  {
+    "name": "Paris 3e",
+    "zip": "75003",
+    "slug": "paris-3e-75003"
+  },
+  {
+    "name": "Paris 4e",
+    "zip": "75004",
+    "slug": "paris-4e-75004"
+  },
+  {
+    "name": "Paris 5e",
+    "zip": "75005",
+    "slug": "paris-5e-75005"
+  },
+  {
+    "name": "Paris 6e",
+    "zip": "75006",
+    "slug": "paris-6e-75006"
+  },
+  {
+    "name": "Paris 7e",
+    "zip": "75007",
+    "slug": "paris-7e-75007"
+  },
+  {
+    "name": "Paris 8e",
+    "zip": "75008",
+    "slug": "paris-8e-75008"
+  },
+  {
+    "name": "Paris 9e",
+    "zip": "75009",
+    "slug": "paris-9e-75009"
+  },
+  {
+    "name": "Paris 10e",
+    "zip": "75010",
+    "slug": "paris-10e-75010"
+  },
+  {
+    "name": "Paris 11e",
+    "zip": "75011",
+    "slug": "paris-11e-75011"
+  },
+  {
+    "name": "Paris 12e",
+    "zip": "75012",
+    "slug": "paris-12e-75012"
+  },
+  {
+    "name": "Paris 13e",
+    "zip": "75013",
+    "slug": "paris-13e-75013"
+  },
+  {
+    "name": "Paris 14e",
+    "zip": "75014",
+    "slug": "paris-14e-75014"
+  },
+  {
+    "name": "Paris 15e",
+    "zip": "75015",
+    "slug": "paris-15e-75015"
+  },
+  {
+    "name": "Paris 16e",
+    "zip": "75016",
+    "slug": "paris-16e-75016"
+  },
+  {
+    "name": "Paris 17e",
+    "zip": "75017",
+    "slug": "paris-17e-75017"
+  },
+  {
+    "name": "Paris 18e",
+    "zip": "75018",
+    "slug": "paris-18e-75018"
+  },
+  {
+    "name": "Paris 19e",
+    "zip": "75019",
+    "slug": "paris-19e-75019"
+  },
+  {
+    "name": "Paris 20e",
+    "zip": "75020",
+    "slug": "paris-20e-75020"
+  },
+  {
     "name": "Ambérieu-en-Bugey",
     "zip": "01500",
     "slug": "amberieu-en-bugey-01500"
