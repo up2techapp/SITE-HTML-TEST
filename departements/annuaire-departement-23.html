@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Agence Web Creuse (23) - Création de Sites Internet</title>
+    <meta name="description" content="Agence web dans le Creuse (23). Création de sites internet et solutions digitales pour 256 villes du département. Devis gratuit.">
+    <meta name="keywords" content="agence web Creuse, création site internet 23, développement web Creuse">
+    <meta name="author" content="Agence Web France">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agence Web Creuse (23) - Toutes les villes">
+    <meta property="og:description" content="Trouvez votre agence web dans le Creuse - 256 villes couvertes">
+
+    <link rel="canonical" href="https://www.agencewebfrance.fr/annuaire-departement-23.html">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .ville-card {
+            display: block;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #212529;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+        .ville-card:hover {
+            background: #0d6efd;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+        }
+        .ville-card:hover .ville-zip {
+            color: rgba(255,255,255,0.8);
+        }
+        .ville-name {
+            display: block;
+            font-weight: 500;
+        }
+        .ville-zip {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .dept-stats {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .search-filter {
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+            background: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="../index.html">
+                    <i class="bi bi-globe2"></i> Agence Web France
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#about">À Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html#annuaire">Annuaire</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white ms-lg-3 px-4" href="../index.html#contact">Devis Gratuit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding" style="padding-top: 120px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html#annuaire">Annuaire</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Creuse (23)</li>
+                </ol>
+            </nav>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3">
+                        <i class="bi bi-geo-alt-fill text-primary"></i>
+                        Agence Web dans le <span class="text-primary">Creuse</span>
+                    </h1>
+                    <p class="lead text-muted">
+                        Découvrez nos services de création de sites internet et solutions digitales
+                        dans les 256 villes du département Creuse (23).
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="dept-stats text-center">
+                        <div class="display-4 fw-bold">256</div>
+                        <div>villes couvertes</div>
+                        <hr class="my-3 opacity-50">
+                        <div class="h5 mb-0">Creuse (23)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="search-filter">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                            <input type="text" id="filterVilles" class="form-control"
+                                   placeholder="Filtrer les villes du Creuse...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="h4 fw-bold mb-4">
+                <i class="bi bi-building text-primary"></i>
+                Toutes les villes du Creuse
+            </h2>
+
+            <div class="row g-3" id="villesGrid">
+                
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ahun-23150.html" class="ville-card">
+                        <span class="ville-name">Ahun</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ajain-23380.html" class="ville-card">
+                        <span class="ville-name">Ajain</span>
+                        <span class="ville-zip">23380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-alleyrat-23200.html" class="ville-card">
+                        <span class="ville-name">Alleyrat</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-anzeme-23000.html" class="ville-card">
+                        <span class="ville-name">Anzême</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-arfeuille-chatain-23700.html" class="ville-card">
+                        <span class="ville-name">Arfeuille-Châtain</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-arrenes-23210.html" class="ville-card">
+                        <span class="ville-name">Arrènes</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ars-23480.html" class="ville-card">
+                        <span class="ville-name">Ars</span>
+                        <span class="ville-zip">23480</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-aubusson-23200.html" class="ville-card">
+                        <span class="ville-name">Aubusson</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-auge-23170.html" class="ville-card">
+                        <span class="ville-name">Auge</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-augeres-23210.html" class="ville-card">
+                        <span class="ville-name">Augères</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-aulon-23210.html" class="ville-card">
+                        <span class="ville-name">Aulon</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-auriat-23400.html" class="ville-card">
+                        <span class="ville-name">Auriat</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-auzances-23700.html" class="ville-card">
+                        <span class="ville-name">Auzances</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-azat-chatenet-23210.html" class="ville-card">
+                        <span class="ville-name">Azat-Châtenet</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-azerables-23160.html" class="ville-card">
+                        <span class="ville-name">Azerables</span>
+                        <span class="ville-zip">23160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-banize-23120.html" class="ville-card">
+                        <span class="ville-name">Banize</span>
+                        <span class="ville-zip">23120</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-basville-23260.html" class="ville-card">
+                        <span class="ville-name">Basville</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bazelat-23160.html" class="ville-card">
+                        <span class="ville-name">Bazelat</span>
+                        <span class="ville-zip">23160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-beissat-23260.html" class="ville-card">
+                        <span class="ville-name">Beissat</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bellegarde-en-marche-23190.html" class="ville-card">
+                        <span class="ville-name">Bellegarde-en-Marche</span>
+                        <span class="ville-zip">23190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-blaudeix-23140.html" class="ville-card">
+                        <span class="ville-name">Blaudeix</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-blessac-23200.html" class="ville-card">
+                        <span class="ville-name">Blessac</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bonnat-23220.html" class="ville-card">
+                        <span class="ville-name">Bonnat</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bord-saint-georges-23230.html" class="ville-card">
+                        <span class="ville-name">Bord-Saint-Georges</span>
+                        <span class="ville-zip">23230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bosmoreau-les-mines-23400.html" class="ville-card">
+                        <span class="ville-name">Bosmoreau-les-Mines</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bosroger-23200.html" class="ville-card">
+                        <span class="ville-name">Bosroger</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bourganeuf-23400.html" class="ville-card">
+                        <span class="ville-name">Bourganeuf</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-boussac-23600.html" class="ville-card">
+                        <span class="ville-name">Boussac</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-boussac-bourg-23600.html" class="ville-card">
+                        <span class="ville-name">Boussac-Bourg</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-brousse-23700.html" class="ville-card">
+                        <span class="ville-name">Brousse</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-budeliere-23170.html" class="ville-card">
+                        <span class="ville-name">Budelière</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bussiere-dunoise-23320.html" class="ville-card">
+                        <span class="ville-name">Bussière-Dunoise</span>
+                        <span class="ville-zip">23320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bussiere-nouvelle-23700.html" class="ville-card">
+                        <span class="ville-name">Bussière-Nouvelle</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bussiere-saint-georges-23600.html" class="ville-card">
+                        <span class="ville-name">Bussière-Saint-Georges</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-benevent-l-abbaye-23210.html" class="ville-card">
+                        <span class="ville-name">Bénévent-l'Abbaye</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-betete-23270.html" class="ville-card">
+                        <span class="ville-name">Bétête</span>
+                        <span class="ville-zip">23270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ceyroux-23210.html" class="ville-card">
+                        <span class="ville-name">Ceyroux</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chamberaud-23480.html" class="ville-card">
+                        <span class="ville-name">Chamberaud</span>
+                        <span class="ville-zip">23480</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chambon-sainte-croix-23220.html" class="ville-card">
+                        <span class="ville-name">Chambon-Sainte-Croix</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chambon-sur-voueize-23170.html" class="ville-card">
+                        <span class="ville-name">Chambon-sur-Voueize</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chambonchard-23110.html" class="ville-card">
+                        <span class="ville-name">Chambonchard</span>
+                        <span class="ville-zip">23110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chamborand-23240.html" class="ville-card">
+                        <span class="ville-name">Chamborand</span>
+                        <span class="ville-zip">23240</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-champagnat-23190.html" class="ville-card">
+                        <span class="ville-name">Champagnat</span>
+                        <span class="ville-zip">23190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-champsanglard-23220.html" class="ville-card">
+                        <span class="ville-name">Champsanglard</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chard-23700.html" class="ville-card">
+                        <span class="ville-name">Chard</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-charron-23700.html" class="ville-card">
+                        <span class="ville-name">Charron</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chavanat-23250.html" class="ville-card">
+                        <span class="ville-name">Chavanat</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chatelard-23700.html" class="ville-card">
+                        <span class="ville-name">Châtelard</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chatelus-malvaleix-23270.html" class="ville-card">
+                        <span class="ville-name">Châtelus-Malvaleix</span>
+                        <span class="ville-zip">23270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chatelus-le-marcheix-23430.html" class="ville-card">
+                        <span class="ville-name">Châtelus-le-Marcheix</span>
+                        <span class="ville-zip">23430</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cheniers-23220.html" class="ville-card">
+                        <span class="ville-name">Chéniers</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chenerailles-23130.html" class="ville-card">
+                        <span class="ville-name">Chénérailles</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-clairavaux-23500.html" class="ville-card">
+                        <span class="ville-name">Clairavaux</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-clugnat-23270.html" class="ville-card">
+                        <span class="ville-name">Clugnat</span>
+                        <span class="ville-zip">23270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-colondannes-23800.html" class="ville-card">
+                        <span class="ville-name">Colondannes</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cressat-23140.html" class="ville-card">
+                        <span class="ville-name">Cressat</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-crocq-23260.html" class="ville-card">
+                        <span class="ville-name">Crocq</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-crozant-23160.html" class="ville-card">
+                        <span class="ville-name">Crozant</span>
+                        <span class="ville-zip">23160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-croze-23500.html" class="ville-card">
+                        <span class="ville-name">Croze</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-domeyrot-23140.html" class="ville-card">
+                        <span class="ville-name">Domeyrot</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-dontreix-23700.html" class="ville-card">
+                        <span class="ville-name">Dontreix</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-dun-le-palestel-23800.html" class="ville-card">
+                        <span class="ville-name">Dun-le-Palestel</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-faux-mazuras-23400.html" class="ville-card">
+                        <span class="ville-name">Faux-Mazuras</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-faux-la-montagne-23340.html" class="ville-card">
+                        <span class="ville-name">Faux-la-Montagne</span>
+                        <span class="ville-zip">23340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-felletin-23500.html" class="ville-card">
+                        <span class="ville-name">Felletin</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-flayat-23260.html" class="ville-card">
+                        <span class="ville-name">Flayat</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fleurat-23320.html" class="ville-card">
+                        <span class="ville-name">Fleurat</span>
+                        <span class="ville-zip">23320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fontanieres-23110.html" class="ville-card">
+                        <span class="ville-name">Fontanières</span>
+                        <span class="ville-zip">23110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-franseches-23480.html" class="ville-card">
+                        <span class="ville-name">Fransèches</span>
+                        <span class="ville-zip">23480</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fresselines-23450.html" class="ville-card">
+                        <span class="ville-name">Fresselines</span>
+                        <span class="ville-zip">23450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fursac-23290.html" class="ville-card">
+                        <span class="ville-name">Fursac</span>
+                        <span class="ville-zip">23290</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-feniers-23100.html" class="ville-card">
+                        <span class="ville-name">Féniers</span>
+                        <span class="ville-zip">23100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-gartempe-23320.html" class="ville-card">
+                        <span class="ville-name">Gartempe</span>
+                        <span class="ville-zip">23320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-genouillac-23350.html" class="ville-card">
+                        <span class="ville-name">Genouillac</span>
+                        <span class="ville-zip">23350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-gentioux-pigerolles-23340.html" class="ville-card">
+                        <span class="ville-name">Gentioux-Pigerolles</span>
+                        <span class="ville-zip">23340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-gioux-23500.html" class="ville-card">
+                        <span class="ville-name">Gioux</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-glenic-23380.html" class="ville-card">
+                        <span class="ville-name">Glénic</span>
+                        <span class="ville-zip">23380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-gouzon-23230.html" class="ville-card">
+                        <span class="ville-name">Gouzon</span>
+                        <span class="ville-zip">23230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-gueret-23000.html" class="ville-card">
+                        <span class="ville-name">Guéret</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-issoudun-letrieix-23130.html" class="ville-card">
+                        <span class="ville-name">Issoudun-Létrieix</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-jalesches-23270.html" class="ville-card">
+                        <span class="ville-name">Jalesches</span>
+                        <span class="ville-zip">23270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-janaillat-23250.html" class="ville-card">
+                        <span class="ville-name">Janaillat</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-jarnages-23140.html" class="ville-card">
+                        <span class="ville-name">Jarnages</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-jouillat-23220.html" class="ville-card">
+                        <span class="ville-name">Jouillat</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-labrionne-23000.html" class="ville-card">
+                        <span class="ville-name">LaBrionne</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lacelle-dunoise-23800.html" class="ville-card">
+                        <span class="ville-name">LaCelle-Dunoise</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lacelle-sous-gouzon-23230.html" class="ville-card">
+                        <span class="ville-name">LaCelle-sous-Gouzon</span>
+                        <span class="ville-zip">23230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lacellette-23350.html" class="ville-card">
+                        <span class="ville-name">LaCellette</span>
+                        <span class="ville-zip">23350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-baloue-23160.html" class="ville-card">
+                        <span class="ville-name">LaChapelle-Baloue</span>
+                        <span class="ville-zip">23160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-saint-martial-23250.html" class="ville-card">
+                        <span class="ville-name">LaChapelle-Saint-Martial</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-taillefert-23000.html" class="ville-card">
+                        <span class="ville-name">LaChapelle-Taillefert</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachaussade-23200.html" class="ville-card">
+                        <span class="ville-name">LaChaussade</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lacourtine-23100.html" class="ville-card">
+                        <span class="ville-name">LaCourtine</span>
+                        <span class="ville-zip">23100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-laforet-du-temple-23360.html" class="ville-card">
+                        <span class="ville-name">LaForêt-du-Temple</span>
+                        <span class="ville-zip">23360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lamaziere-aux-bons-hommes-23260.html" class="ville-card">
+                        <span class="ville-name">LaMazière-aux-Bons-Hommes</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lanouaille-23500.html" class="ville-card">
+                        <span class="ville-name">LaNouaille</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lapouge-23250.html" class="ville-card">
+                        <span class="ville-name">LaPouge</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lasauniere-23000.html" class="ville-card">
+                        <span class="ville-name">LaSaunière</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-laserre-bussiere-vieille-23190.html" class="ville-card">
+                        <span class="ville-name">LaSerre-Bussière-Vieille</span>
+                        <span class="ville-zip">23190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lasouterraine-23300.html" class="ville-card">
+                        <span class="ville-name">LaSouterraine</span>
+                        <span class="ville-zip">23300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavilledieu-23340.html" class="ville-card">
+                        <span class="ville-name">LaVilledieu</span>
+                        <span class="ville-zip">23340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavilleneuve-23260.html" class="ville-card">
+                        <span class="ville-name">LaVilleneuve</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavilletelle-23260.html" class="ville-card">
+                        <span class="ville-name">LaVilletelle</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ladapeyre-23270.html" class="ville-card">
+                        <span class="ville-name">Ladapeyre</span>
+                        <span class="ville-zip">23270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lafat-23800.html" class="ville-card">
+                        <span class="ville-name">Lafat</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavaufranche-23600.html" class="ville-card">
+                        <span class="ville-name">Lavaufranche</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavaveix-les-mines-23150.html" class="ville-card">
+                        <span class="ville-name">Lavaveix-les-Mines</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lebourg-d-hem-23220.html" class="ville-card">
+                        <span class="ville-name">LeBourg-d'Hem</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lechauchet-23130.html" class="ville-card">
+                        <span class="ville-name">LeChauchet</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lecompas-23700.html" class="ville-card">
+                        <span class="ville-name">LeCompas</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ledonzeil-23480.html" class="ville-card">
+                        <span class="ville-name">LeDonzeil</span>
+                        <span class="ville-zip">23480</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-legrand-bourg-23240.html" class="ville-card">
+                        <span class="ville-name">LeGrand-Bourg</span>
+                        <span class="ville-zip">23240</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lemas-d-artige-23100.html" class="ville-card">
+                        <span class="ville-name">LeMas-d'Artige</span>
+                        <span class="ville-zip">23100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lemonteil-au-vicomte-23460.html" class="ville-card">
+                        <span class="ville-name">LeMonteil-au-Vicomte</span>
+                        <span class="ville-zip">23460</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lesmars-23700.html" class="ville-card">
+                        <span class="ville-name">LesMars</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-leyrat-23600.html" class="ville-card">
+                        <span class="ville-name">Leyrat</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-linard-malval-23220.html" class="ville-card">
+                        <span class="ville-name">Linard-Malval</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lioux-les-monges-23700.html" class="ville-card">
+                        <span class="ville-name">Lioux-les-Monges</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lizieres-23240.html" class="ville-card">
+                        <span class="ville-name">Lizières</span>
+                        <span class="ville-zip">23240</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lourdoueix-saint-pierre-23360.html" class="ville-card">
+                        <span class="ville-name">Lourdoueix-Saint-Pierre</span>
+                        <span class="ville-zip">23360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lupersat-23190.html" class="ville-card">
+                        <span class="ville-name">Lupersat</span>
+                        <span class="ville-zip">23190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lussat-23170.html" class="ville-card">
+                        <span class="ville-name">Lussat</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lepaud-23170.html" class="ville-card">
+                        <span class="ville-name">Lépaud</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lepinas-23150.html" class="ville-card">
+                        <span class="ville-name">Lépinas</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-magnat-l-etrange-23260.html" class="ville-card">
+                        <span class="ville-name">Magnat-l'Étrange</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mainsat-23700.html" class="ville-card">
+                        <span class="ville-name">Mainsat</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-maison-feyne-23800.html" class="ville-card">
+                        <span class="ville-name">Maison-Feyne</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-maisonnisses-23150.html" class="ville-card">
+                        <span class="ville-name">Maisonnisses</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-malleret-23260.html" class="ville-card">
+                        <span class="ville-name">Malleret</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-malleret-boussac-23600.html" class="ville-card">
+                        <span class="ville-name">Malleret-Boussac</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mansat-la-courriere-23400.html" class="ville-card">
+                        <span class="ville-name">Mansat-la-Courrière</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-marsac-23210.html" class="ville-card">
+                        <span class="ville-name">Marsac</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mautes-23190.html" class="ville-card">
+                        <span class="ville-name">Mautes</span>
+                        <span class="ville-zip">23190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mazeirat-23150.html" class="ville-card">
+                        <span class="ville-name">Mazeirat</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montaigut-le-blanc-23320.html" class="ville-card">
+                        <span class="ville-name">Montaigut-le-Blanc</span>
+                        <span class="ville-zip">23320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montboucher-23400.html" class="ville-card">
+                        <span class="ville-name">Montboucher</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mortroux-23220.html" class="ville-card">
+                        <span class="ville-name">Mortroux</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mourioux-vieilleville-23210.html" class="ville-card">
+                        <span class="ville-name">Mourioux-Vieilleville</span>
+                        <span class="ville-zip">23210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-moutier-malcard-23220.html" class="ville-card">
+                        <span class="ville-name">Moutier-Malcard</span>
+                        <span class="ville-zip">23220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-moutier-rozeille-23200.html" class="ville-card">
+                        <span class="ville-name">Moutier-Rozeille</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-moutier-d-ahun-23150.html" class="ville-card">
+                        <span class="ville-name">Moutier-d'Ahun</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-measnes-23360.html" class="ville-card">
+                        <span class="ville-name">Méasnes</span>
+                        <span class="ville-zip">23360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-merinchal-23420.html" class="ville-card">
+                        <span class="ville-name">Mérinchal</span>
+                        <span class="ville-zip">23420</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-naillat-23800.html" class="ville-card">
+                        <span class="ville-name">Naillat</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-noth-23300.html" class="ville-card">
+                        <span class="ville-name">Noth</span>
+                        <span class="ville-zip">23300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-nouhant-23170.html" class="ville-card">
+                        <span class="ville-name">Nouhant</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-nouzerines-23600.html" class="ville-card">
+                        <span class="ville-name">Nouzerines</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-nouzerolles-23360.html" class="ville-card">
+                        <span class="ville-name">Nouzerolles</span>
+                        <span class="ville-zip">23360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-nouziers-23350.html" class="ville-card">
+                        <span class="ville-name">Nouziers</span>
+                        <span class="ville-zip">23350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-neoux-23200.html" class="ville-card">
+                        <span class="ville-name">Néoux</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-parsac-rimondeix-23140.html" class="ville-card">
+                        <span class="ville-name">Parsac-Rimondeix</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-peyrabout-23000.html" class="ville-card">
+                        <span class="ville-name">Peyrabout</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-peyrat-la-noniere-23130.html" class="ville-card">
+                        <span class="ville-name">Peyrat-la-Nonière</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pierrefitte-23130.html" class="ville-card">
+                        <span class="ville-name">Pierrefitte</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pionnat-23140.html" class="ville-card">
+                        <span class="ville-name">Pionnat</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pontarion-23250.html" class="ville-card">
+                        <span class="ville-name">Pontarion</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pontcharraud-23260.html" class="ville-card">
+                        <span class="ville-name">Pontcharraud</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-poussanges-23500.html" class="ville-card">
+                        <span class="ville-name">Poussanges</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-puy-malsignat-23130.html" class="ville-card">
+                        <span class="ville-name">Puy-Malsignat</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-reterre-23110.html" class="ville-card">
+                        <span class="ville-name">Reterre</span>
+                        <span class="ville-zip">23110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-roches-23270.html" class="ville-card">
+                        <span class="ville-name">Roches</span>
+                        <span class="ville-zip">23270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-rougnat-23700.html" class="ville-card">
+                        <span class="ville-name">Rougnat</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-royere-de-vassiviere-23460.html" class="ville-card">
+                        <span class="ville-name">Royère-de-Vassivière</span>
+                        <span class="ville-zip">23460</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sagnat-23800.html" class="ville-card">
+                        <span class="ville-name">Sagnat</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-agnant-de-versillat-23300.html" class="ville-card">
+                        <span class="ville-name">Saint-Agnant-de-Versillat</span>
+                        <span class="ville-zip">23300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-agnant-pres-crocq-23260.html" class="ville-card">
+                        <span class="ville-name">Saint-Agnant-près-Crocq</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-alpinien-23200.html" class="ville-card">
+                        <span class="ville-name">Saint-Alpinien</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-amand-23200.html" class="ville-card">
+                        <span class="ville-name">Saint-Amand</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-amand-jartoudeix-23400.html" class="ville-card">
+                        <span class="ville-name">Saint-Amand-Jartoudeix</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-avit-de-tardes-23200.html" class="ville-card">
+                        <span class="ville-name">Saint-Avit-de-Tardes</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-avit-le-pauvre-23480.html" class="ville-card">
+                        <span class="ville-name">Saint-Avit-le-Pauvre</span>
+                        <span class="ville-zip">23480</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-bard-23260.html" class="ville-card">
+                        <span class="ville-name">Saint-Bard</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-chabrais-23130.html" class="ville-card">
+                        <span class="ville-name">Saint-Chabrais</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-christophe-23000.html" class="ville-card">
+                        <span class="ville-name">Saint-Christophe</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-dizier-masbaraud-23400.html" class="ville-card">
+                        <span class="ville-name">Saint-Dizier-Masbaraud</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-dizier-la-tour-23130.html" class="ville-card">
+                        <span class="ville-name">Saint-Dizier-la-Tour</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-dizier-les-domaines-23270.html" class="ville-card">
+                        <span class="ville-name">Saint-Dizier-les-Domaines</span>
+                        <span class="ville-zip">23270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-domet-23190.html" class="ville-card">
+                        <span class="ville-name">Saint-Domet</span>
+                        <span class="ville-zip">23190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-fiel-23000.html" class="ville-card">
+                        <span class="ville-name">Saint-Fiel</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-frion-23500.html" class="ville-card">
+                        <span class="ville-name">Saint-Frion</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-georges-nigremont-23500.html" class="ville-card">
+                        <span class="ville-name">Saint-Georges-Nigremont</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-georges-la-pouge-23250.html" class="ville-card">
+                        <span class="ville-name">Saint-Georges-la-Pouge</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-germain-beaupre-23160.html" class="ville-card">
+                        <span class="ville-name">Saint-Germain-Beaupré</span>
+                        <span class="ville-zip">23160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-goussaud-23430.html" class="ville-card">
+                        <span class="ville-name">Saint-Goussaud</span>
+                        <span class="ville-zip">23430</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-hilaire-la-plaine-23150.html" class="ville-card">
+                        <span class="ville-name">Saint-Hilaire-la-Plaine</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-hilaire-le-chateau-23250.html" class="ville-card">
+                        <span class="ville-name">Saint-Hilaire-le-Château</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-julien-la-genete-23110.html" class="ville-card">
+                        <span class="ville-name">Saint-Julien-la-Genête</span>
+                        <span class="ville-zip">23110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-julien-le-chatel-23130.html" class="ville-card">
+                        <span class="ville-name">Saint-Julien-le-Châtel</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-junien-la-bregere-23400.html" class="ville-card">
+                        <span class="ville-name">Saint-Junien-la-Bregère</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-laurent-23000.html" class="ville-card">
+                        <span class="ville-name">Saint-Laurent</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-loup-23130.html" class="ville-card">
+                        <span class="ville-name">Saint-Loup</span>
+                        <span class="ville-zip">23130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-leger-bridereix-23300.html" class="ville-card">
+                        <span class="ville-name">Saint-Léger-Bridereix</span>
+                        <span class="ville-zip">23300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-leger-le-gueretois-23000.html" class="ville-card">
+                        <span class="ville-name">Saint-Léger-le-Guérétois</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-maixant-23200.html" class="ville-card">
+                        <span class="ville-name">Saint-Maixant</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-marc-a-frongier-23200.html" class="ville-card">
+                        <span class="ville-name">Saint-Marc-à-Frongier</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-marc-a-loubaud-23460.html" class="ville-card">
+                        <span class="ville-name">Saint-Marc-à-Loubaud</span>
+                        <span class="ville-zip">23460</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-marien-23600.html" class="ville-card">
+                        <span class="ville-name">Saint-Marien</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-martial-le-mont-23150.html" class="ville-card">
+                        <span class="ville-name">Saint-Martial-le-Mont</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-martial-le-vieux-23100.html" class="ville-card">
+                        <span class="ville-name">Saint-Martial-le-Vieux</span>
+                        <span class="ville-zip">23100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-martin-chateau-23460.html" class="ville-card">
+                        <span class="ville-name">Saint-Martin-Château</span>
+                        <span class="ville-zip">23460</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-martin-sainte-catherine-23430.html" class="ville-card">
+                        <span class="ville-name">Saint-Martin-Sainte-Catherine</span>
+                        <span class="ville-zip">23430</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-maurice-la-souterraine-23300.html" class="ville-card">
+                        <span class="ville-name">Saint-Maurice-la-Souterraine</span>
+                        <span class="ville-zip">23300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-maurice-pres-crocq-23260.html" class="ville-card">
+                        <span class="ville-name">Saint-Maurice-près-Crocq</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-merd-la-breuille-23100.html" class="ville-card">
+                        <span class="ville-name">Saint-Merd-la-Breuille</span>
+                        <span class="ville-zip">23100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-michel-de-veisse-23480.html" class="ville-card">
+                        <span class="ville-name">Saint-Michel-de-Veisse</span>
+                        <span class="ville-zip">23480</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-moreil-23400.html" class="ville-card">
+                        <span class="ville-name">Saint-Moreil</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-medard-la-rochette-23200.html" class="ville-card">
+                        <span class="ville-name">Saint-Médard-la-Rochette</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-oradoux-de-chirouze-23100.html" class="ville-card">
+                        <span class="ville-name">Saint-Oradoux-de-Chirouze</span>
+                        <span class="ville-zip">23100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-oradoux-pres-crocq-23260.html" class="ville-card">
+                        <span class="ville-name">Saint-Oradoux-près-Crocq</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pardoux-morterolles-23400.html" class="ville-card">
+                        <span class="ville-name">Saint-Pardoux-Morterolles</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pardoux-d-arnet-23260.html" class="ville-card">
+                        <span class="ville-name">Saint-Pardoux-d'Arnet</span>
+                        <span class="ville-zip">23260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pardoux-le-neuf-23200.html" class="ville-card">
+                        <span class="ville-name">Saint-Pardoux-le-Neuf</span>
+                        <span class="ville-zip">23200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pardoux-les-cards-23150.html" class="ville-card">
+                        <span class="ville-name">Saint-Pardoux-les-Cards</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pierre-bellevue-23460.html" class="ville-card">
+                        <span class="ville-name">Saint-Pierre-Bellevue</span>
+                        <span class="ville-zip">23460</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pierre-cherignat-23430.html" class="ville-card">
+                        <span class="ville-name">Saint-Pierre-Chérignat</span>
+                        <span class="ville-zip">23430</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pierre-le-bost-23600.html" class="ville-card">
+                        <span class="ville-name">Saint-Pierre-le-Bost</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-priest-23110.html" class="ville-card">
+                        <span class="ville-name">Saint-Priest</span>
+                        <span class="ville-zip">23110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-priest-palus-23400.html" class="ville-card">
+                        <span class="ville-name">Saint-Priest-Palus</span>
+                        <span class="ville-zip">23400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-priest-la-feuille-23300.html" class="ville-card">
+                        <span class="ville-name">Saint-Priest-la-Feuille</span>
+                        <span class="ville-zip">23300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-priest-la-plaine-23240.html" class="ville-card">
+                        <span class="ville-name">Saint-Priest-la-Plaine</span>
+                        <span class="ville-zip">23240</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-quentin-la-chabanne-23500.html" class="ville-card">
+                        <span class="ville-name">Saint-Quentin-la-Chabanne</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-silvain-bas-le-roc-23600.html" class="ville-card">
+                        <span class="ville-name">Saint-Silvain-Bas-le-Roc</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-silvain-bellegarde-23190.html" class="ville-card">
+                        <span class="ville-name">Saint-Silvain-Bellegarde</span>
+                        <span class="ville-zip">23190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-silvain-montaigut-23320.html" class="ville-card">
+                        <span class="ville-name">Saint-Silvain-Montaigut</span>
+                        <span class="ville-zip">23320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-silvain-sous-toulx-23140.html" class="ville-card">
+                        <span class="ville-name">Saint-Silvain-sous-Toulx</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-sulpice-le-dunois-23800.html" class="ville-card">
+                        <span class="ville-name">Saint-Sulpice-le-Dunois</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-sulpice-le-gueretois-23000.html" class="ville-card">
+                        <span class="ville-name">Saint-Sulpice-le-Guérétois</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-sulpice-les-champs-23480.html" class="ville-card">
+                        <span class="ville-name">Saint-Sulpice-les-Champs</span>
+                        <span class="ville-zip">23480</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-sebastien-23160.html" class="ville-card">
+                        <span class="ville-name">Saint-Sébastien</span>
+                        <span class="ville-zip">23160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-vaury-23320.html" class="ville-card">
+                        <span class="ville-name">Saint-Vaury</span>
+                        <span class="ville-zip">23320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-victor-en-marche-23000.html" class="ville-card">
+                        <span class="ville-name">Saint-Victor-en-Marche</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-yrieix-la-montagne-23460.html" class="ville-card">
+                        <span class="ville-name">Saint-Yrieix-la-Montagne</span>
+                        <span class="ville-zip">23460</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-yrieix-les-bois-23150.html" class="ville-card">
+                        <span class="ville-name">Saint-Yrieix-les-Bois</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-eloi-23000.html" class="ville-card">
+                        <span class="ville-name">Saint-Éloi</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sainte-feyre-23000.html" class="ville-card">
+                        <span class="ville-name">Sainte-Feyre</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sainte-feyre-la-montagne-23500.html" class="ville-card">
+                        <span class="ville-name">Sainte-Feyre-la-Montagne</span>
+                        <span class="ville-zip">23500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sannat-23110.html" class="ville-card">
+                        <span class="ville-name">Sannat</span>
+                        <span class="ville-zip">23110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sardent-23250.html" class="ville-card">
+                        <span class="ville-name">Sardent</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-savennes-23000.html" class="ville-card">
+                        <span class="ville-name">Savennes</span>
+                        <span class="ville-zip">23000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sermur-23700.html" class="ville-card">
+                        <span class="ville-name">Sermur</span>
+                        <span class="ville-zip">23700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-soubrebost-23250.html" class="ville-card">
+                        <span class="ville-name">Soubrebost</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-soumans-23600.html" class="ville-card">
+                        <span class="ville-name">Soumans</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sous-parsat-23150.html" class="ville-card">
+                        <span class="ville-name">Sous-Parsat</span>
+                        <span class="ville-zip">23150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-tardes-23170.html" class="ville-card">
+                        <span class="ville-name">Tardes</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-tercillat-23350.html" class="ville-card">
+                        <span class="ville-name">Tercillat</span>
+                        <span class="ville-zip">23350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-thauron-23250.html" class="ville-card">
+                        <span class="ville-name">Thauron</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-toulx-sainte-croix-23600.html" class="ville-card">
+                        <span class="ville-name">Toulx-Sainte-Croix</span>
+                        <span class="ville-zip">23600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-trois-fonds-23230.html" class="ville-card">
+                        <span class="ville-name">Trois-Fonds</span>
+                        <span class="ville-zip">23230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-valliere-23120.html" class="ville-card">
+                        <span class="ville-name">Vallière</span>
+                        <span class="ville-zip">23120</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vareilles-23300.html" class="ville-card">
+                        <span class="ville-name">Vareilles</span>
+                        <span class="ville-zip">23300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-verneiges-23170.html" class="ville-card">
+                        <span class="ville-name">Verneiges</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vidaillat-23250.html" class="ville-card">
+                        <span class="ville-name">Vidaillat</span>
+                        <span class="ville-zip">23250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-viersat-23170.html" class="ville-card">
+                        <span class="ville-name">Viersat</span>
+                        <span class="ville-zip">23170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vigeville-23140.html" class="ville-card">
+                        <span class="ville-name">Vigeville</span>
+                        <span class="ville-zip">23140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-villard-23800.html" class="ville-card">
+                        <span class="ville-name">Villard</span>
+                        <span class="ville-zip">23800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-evaux-les-bains-23110.html" class="ville-card">
+                        <span class="ville-name">Évaux-les-Bains</span>
+                        <span class="ville-zip">23110</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding bg-primary text-white mt-5">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-4">Besoin d'une agence web dans le Creuse ?</h2>
+            <p class="lead mb-4">Contactez-nous pour un devis gratuit et personnalisé.</p>
+            <a href="../index.html#contact" class="btn btn-light btn-lg px-5">
+                <i class="bi bi-envelope"></i> Demander un Devis
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-globe2"></i> Agence Web France</h5>
+                    <p class="text-white-50">
+                        Votre partenaire de confiance pour tous vos projets web dans le Creuse et partout en France.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="../index.html#services" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="../index.html#annuaire" class="text-white-50 text-decoration-none">Annuaire</a></li>
+                        <li class="mb-2"><a href="../index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> Paris, France</li>
+                        <li class="mb-2"><i class="bi bi-telephone"></i> +33 1 23 45 67 89</li>
+                        <li class="mb-2"><i class="bi bi-envelope"></i> contact@agencewebfrance.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <p class="text-center text-white-50 mb-0">
+                &copy; 2024 Agence Web France - Annuaire Creuse. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filtrage des villes
+        document.getElementById('filterVilles').addEventListener('input', function() {
+            const filter = this.value.toLowerCase();
+            const cards = document.querySelectorAll('#villesGrid > div');
+
+            cards.forEach(card => {
+                const name = card.querySelector('.ville-name').textContent.toLowerCase();
+                const zip = card.querySelector('.ville-zip').textContent.toLowerCase();
+
+                if (name.includes(filter) || zip.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

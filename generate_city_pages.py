@@ -115,7 +115,7 @@ def generate_page_html(ville):
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
                     <li class="breadcrumb-item"><a href="../index.html#annuaire">Annuaire</a></li>
-                    <li class="breadcrumb-item"><a href="../annuaire-departement-{dept}.html">{dept_name}</a></li>
+                    <li class="breadcrumb-item"><a href="../departements/annuaire-departement-{dept}.html">{dept_name}</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{name}</li>
                 </ol>
             </nav>

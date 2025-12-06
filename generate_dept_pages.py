@@ -19,7 +19,7 @@ def generate_dept_page(dept):
     for v in sorted(villes, key=lambda x: x["name"]):
         villes_html += f'''
                 <div class="col-6 col-md-4 col-lg-3">
-                    <a href="villes/agence-web-{v["slug"]}.html" class="ville-card">
+                    <a href="../villes/agence-web-{v["slug"]}.html" class="ville-card">
                         <span class="ville-name">{v["name"]}</span>
                         <span class="ville-zip">{v["zip"]}</span>
                     </a>
@@ -41,11 +41,11 @@ def generate_dept_page(dept):
     <meta property="og:title" content="Agence Web {name} ({code}) - Toutes les villes">
     <meta property="og:description" content="Trouvez votre agence web dans le {name} - {count} villes couvertes">
 
-    <link rel="canonical" href="https://www.agencewebfrance.fr/annuaire-departement-{code}.html">
+    <link rel="canonical" href="https://www.agencewebfrance.fr/departements/annuaire-departement-{code}.html">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <style>
         .ville-card {{
@@ -96,7 +96,7 @@ def generate_dept_page(dept):
     <header id="header" class="header-sticky">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <a class="navbar-brand fw-bold text-primary" href="../index.html">
                     <i class="bi bi-globe2"></i> Agence Web France
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -104,14 +104,14 @@ def generate_dept_page(dept):
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#about">À Propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="index.html#annuaire">Annuaire</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#about">À Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html#annuaire">Annuaire</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary text-white ms-lg-3 px-4" href="index.html#contact">Devis Gratuit</a>
+                            <a class="nav-link btn btn-primary text-white ms-lg-3 px-4" href="../index.html#contact">Devis Gratuit</a>
                         </li>
                     </ul>
                 </div>
@@ -123,8 +123,8 @@ def generate_dept_page(dept):
         <div class="container">
             <nav aria-label="breadcrumb" class="mb-4">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-                    <li class="breadcrumb-item"><a href="index.html#annuaire">Annuaire</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html#annuaire">Annuaire</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{name} ({code})</li>
                 </ol>
             </nav>
@@ -181,7 +181,7 @@ def generate_dept_page(dept):
         <div class="container text-center">
             <h2 class="display-6 fw-bold mb-4">Besoin d'une agence web dans le {name} ?</h2>
             <p class="lead mb-4">Contactez-nous pour un devis gratuit et personnalisé.</p>
-            <a href="index.html#contact" class="btn btn-light btn-lg px-5">
+            <a href="../index.html#contact" class="btn btn-light btn-lg px-5">
                 <i class="bi bi-envelope"></i> Demander un Devis
             </a>
         </div>
@@ -199,10 +199,10 @@ def generate_dept_page(dept):
                 <div class="col-lg-4">
                     <h5 class="fw-bold mb-3">Navigation</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
-                        <li class="mb-2"><a href="index.html#services" class="text-white-50 text-decoration-none">Services</a></li>
-                        <li class="mb-2"><a href="index.html#annuaire" class="text-white-50 text-decoration-none">Annuaire</a></li>
-                        <li class="mb-2"><a href="index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="../index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="../index.html#services" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="../index.html#annuaire" class="text-white-50 text-decoration-none">Annuaire</a></li>
+                        <li class="mb-2"><a href="../index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
@@ -255,8 +255,11 @@ def main():
     print(f"\n✓ {len(departements)} départements chargés")
     print("\nGénération des pages en cours...")
 
+    # Créer le dossier departements si nécessaire
+    os.makedirs('departements', exist_ok=True)
+
     for i, dept in enumerate(departements, 1):
-        filename = f"annuaire-departement-{dept['code']}.html"
+        filename = f"departements/annuaire-departement-{dept['code']}.html"
 
         html_content = generate_dept_page(dept)
 
