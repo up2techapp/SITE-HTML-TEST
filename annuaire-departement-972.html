@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Agence Web Martinique (972) - Création de Sites Internet</title>
+    <meta name="description" content="Agence web dans le Martinique (972). Création de sites internet et solutions digitales pour 34 villes du département. Devis gratuit.">
+    <meta name="keywords" content="agence web Martinique, création site internet 972, développement web Martinique">
+    <meta name="author" content="Agence Web France">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agence Web Martinique (972) - Toutes les villes">
+    <meta property="og:description" content="Trouvez votre agence web dans le Martinique - 34 villes couvertes">
+
+    <link rel="canonical" href="https://www.agencewebfrance.fr/annuaire-departement-972.html">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .ville-card {
+            display: block;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #212529;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+        .ville-card:hover {
+            background: #0d6efd;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+        }
+        .ville-card:hover .ville-zip {
+            color: rgba(255,255,255,0.8);
+        }
+        .ville-name {
+            display: block;
+            font-weight: 500;
+        }
+        .ville-zip {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .dept-stats {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .search-filter {
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+            background: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="index.html">
+                    <i class="bi bi-globe2"></i> Agence Web France
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">À Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html#annuaire">Annuaire</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white ms-lg-3 px-4" href="index.html#contact">Devis Gratuit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding" style="padding-top: 120px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="index.html#annuaire">Annuaire</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Martinique (972)</li>
+                </ol>
+            </nav>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3">
+                        <i class="bi bi-geo-alt-fill text-primary"></i>
+                        Agence Web dans le <span class="text-primary">Martinique</span>
+                    </h1>
+                    <p class="lead text-muted">
+                        Découvrez nos services de création de sites internet et solutions digitales
+                        dans les 34 villes du département Martinique (972).
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="dept-stats text-center">
+                        <div class="display-4 fw-bold">34</div>
+                        <div>villes couvertes</div>
+                        <hr class="my-3 opacity-50">
+                        <div class="h5 mb-0">Martinique (972)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="search-filter">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                            <input type="text" id="filterVilles" class="form-control"
+                                   placeholder="Filtrer les villes du Martinique...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="h4 fw-bold mb-4">
+                <i class="bi bi-building text-primary"></i>
+                Toutes les villes du Martinique
+            </h2>
+
+            <div class="row g-3" id="villesGrid">
+                
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-basse-pointe-97218.html" class="ville-card">
+                        <span class="ville-name">Basse-Pointe</span>
+                        <span class="ville-zip">97218</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-bellefontaine-97222.html" class="ville-card">
+                        <span class="ville-name">Bellefontaine</span>
+                        <span class="ville-zip">97222</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-case-pilote-97222.html" class="ville-card">
+                        <span class="ville-name">Case-Pilote</span>
+                        <span class="ville-zip">97222</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-ducos-97224.html" class="ville-card">
+                        <span class="ville-name">Ducos</span>
+                        <span class="ville-zip">97224</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-fonds-saint-denis-97250.html" class="ville-card">
+                        <span class="ville-name">Fonds-Saint-Denis</span>
+                        <span class="ville-zip">97250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-fort-de-france-97200.html" class="ville-card">
+                        <span class="ville-name">Fort-de-France</span>
+                        <span class="ville-zip">97200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-grand-riviere-97218.html" class="ville-card">
+                        <span class="ville-name">Grand'Rivière</span>
+                        <span class="ville-zip">97218</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-gros-morne-97213.html" class="ville-card">
+                        <span class="ville-name">Gros-Morne</span>
+                        <span class="ville-zip">97213</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-l-ajoupa-bouillon-97216.html" class="ville-card">
+                        <span class="ville-name">L'Ajoupa-Bouillon</span>
+                        <span class="ville-zip">97216</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-latrinite-97220.html" class="ville-card">
+                        <span class="ville-name">LaTrinité</span>
+                        <span class="ville-zip">97220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lecarbet-97221.html" class="ville-card">
+                        <span class="ville-name">LeCarbet</span>
+                        <span class="ville-zip">97221</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lediamant-97223.html" class="ville-card">
+                        <span class="ville-name">LeDiamant</span>
+                        <span class="ville-zip">97223</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lefrancois-97240.html" class="ville-card">
+                        <span class="ville-name">LeFrançois</span>
+                        <span class="ville-zip">97240</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lelamentin-97232.html" class="ville-card">
+                        <span class="ville-name">LeLamentin</span>
+                        <span class="ville-zip">97232</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lelorrain-97214.html" class="ville-card">
+                        <span class="ville-name">LeLorrain</span>
+                        <span class="ville-zip">97214</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lemarigot-97225.html" class="ville-card">
+                        <span class="ville-name">LeMarigot</span>
+                        <span class="ville-zip">97225</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lemarin-97290.html" class="ville-card">
+                        <span class="ville-name">LeMarin</span>
+                        <span class="ville-zip">97290</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lemorne-rouge-97260.html" class="ville-card">
+                        <span class="ville-name">LeMorne-Rouge</span>
+                        <span class="ville-zip">97260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lemorne-vert-97226.html" class="ville-card">
+                        <span class="ville-name">LeMorne-Vert</span>
+                        <span class="ville-zip">97226</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-leprecheur-97250.html" class="ville-card">
+                        <span class="ville-name">LePrêcheur</span>
+                        <span class="ville-zip">97250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lerobert-97231.html" class="ville-card">
+                        <span class="ville-name">LeRobert</span>
+                        <span class="ville-zip">97231</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-levauclin-97280.html" class="ville-card">
+                        <span class="ville-name">LeVauclin</span>
+                        <span class="ville-zip">97280</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lesanses-d-arlet-97217.html" class="ville-card">
+                        <span class="ville-name">LesAnses-d'Arlet</span>
+                        <span class="ville-zip">97217</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-lestrois-ilets-97229.html" class="ville-card">
+                        <span class="ville-name">LesTrois-Îlets</span>
+                        <span class="ville-zip">97229</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-macouba-97218.html" class="ville-card">
+                        <span class="ville-name">Macouba</span>
+                        <span class="ville-zip">97218</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-riviere-pilote-97211.html" class="ville-card">
+                        <span class="ville-name">Rivière-Pilote</span>
+                        <span class="ville-zip">97211</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-riviere-salee-97215.html" class="ville-card">
+                        <span class="ville-name">Rivière-Salée</span>
+                        <span class="ville-zip">97215</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-saint-esprit-97270.html" class="ville-card">
+                        <span class="ville-name">Saint-Esprit</span>
+                        <span class="ville-zip">97270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-saint-joseph-97212.html" class="ville-card">
+                        <span class="ville-name">Saint-Joseph</span>
+                        <span class="ville-zip">97212</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-saint-pierre-97250.html" class="ville-card">
+                        <span class="ville-name">Saint-Pierre</span>
+                        <span class="ville-zip">97250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-sainte-anne-97227.html" class="ville-card">
+                        <span class="ville-name">Sainte-Anne</span>
+                        <span class="ville-zip">97227</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-sainte-luce-97228.html" class="ville-card">
+                        <span class="ville-name">Sainte-Luce</span>
+                        <span class="ville-zip">97228</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-sainte-marie-97230.html" class="ville-card">
+                        <span class="ville-name">Sainte-Marie</span>
+                        <span class="ville-zip">97230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="villes/agence-web-sch-lcher-97233.html" class="ville-card">
+                        <span class="ville-name">Schœlcher</span>
+                        <span class="ville-zip">97233</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding bg-primary text-white mt-5">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-4">Besoin d'une agence web dans le Martinique ?</h2>
+            <p class="lead mb-4">Contactez-nous pour un devis gratuit et personnalisé.</p>
+            <a href="index.html#contact" class="btn btn-light btn-lg px-5">
+                <i class="bi bi-envelope"></i> Demander un Devis
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-globe2"></i> Agence Web France</h5>
+                    <p class="text-white-50">
+                        Votre partenaire de confiance pour tous vos projets web dans le Martinique et partout en France.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="index.html#services" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="index.html#annuaire" class="text-white-50 text-decoration-none">Annuaire</a></li>
+                        <li class="mb-2"><a href="index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> Paris, France</li>
+                        <li class="mb-2"><i class="bi bi-telephone"></i> +33 1 23 45 67 89</li>
+                        <li class="mb-2"><i class="bi bi-envelope"></i> contact@agencewebfrance.fr</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <p class="text-center text-white-50 mb-0">
+                &copy; 2024 Agence Web France - Annuaire Martinique. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filtrage des villes
+        document.getElementById('filterVilles').addEventListener('input', function() {
+            const filter = this.value.toLowerCase();
+            const cards = document.querySelectorAll('#villesGrid > div');
+
+            cards.forEach(card => {
+                const name = card.querySelector('.ville-name').textContent.toLowerCase();
+                const zip = card.querySelector('.ville-zip').textContent.toLowerCase();
+
+                if (name.includes(filter) || zip.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
