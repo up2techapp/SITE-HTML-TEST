@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Agence Web Territoire de Belfort (90) - Création de Sites Internet</title>
+    <meta name="description" content="Agence web dans le Territoire de Belfort (90). Création de sites internet et solutions digitales pour 101 villes du département. Devis gratuit.">
+    <meta name="keywords" content="agence web Territoire de Belfort, création site internet 90, développement web Territoire de Belfort">
+    <meta name="author" content="Agence Web France">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agence Web Territoire de Belfort (90) - Toutes les villes">
+    <meta property="og:description" content="Trouvez votre agence web dans le Territoire de Belfort - 101 villes couvertes">
+
+    <link rel="canonical" href="https://www.agencewebfrance.fr/departements/annuaire-departement-90.html">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .ville-card {
+            display: block;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #212529;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+        .ville-card:hover {
+            background: #0d6efd;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+        }
+        .ville-card:hover .ville-zip {
+            color: rgba(255,255,255,0.8);
+        }
+        .ville-name {
+            display: block;
+            font-weight: 500;
+        }
+        .ville-zip {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .dept-stats {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .search-filter {
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+            background: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="../index.html">
+                    <i class="bi bi-globe2"></i> Agence Web France
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#about">À Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html#annuaire">Annuaire</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white ms-lg-3 px-4" href="../index.html#contact">Devis Gratuit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding" style="padding-top: 120px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html#annuaire">Annuaire</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Territoire de Belfort (90)</li>
+                </ol>
+            </nav>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3">
+                        <i class="bi bi-geo-alt-fill text-primary"></i>
+                        Agence Web dans le <span class="text-primary">Territoire de Belfort</span>
+                    </h1>
+                    <p class="lead text-muted">
+                        Découvrez nos services de création de sites internet et solutions digitales
+                        dans les 101 villes du département Territoire de Belfort (90).
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="dept-stats text-center">
+                        <div class="display-4 fw-bold">101</div>
+                        <div>villes couvertes</div>
+                        <hr class="my-3 opacity-50">
+                        <div class="h5 mb-0">Territoire de Belfort (90)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="search-filter">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                            <input type="text" id="filterVilles" class="form-control"
+                                   placeholder="Filtrer les villes du Territoire de Belfort...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="h4 fw-bold mb-4">
+                <i class="bi bi-building text-primary"></i>
+                Toutes les villes du Territoire de Belfort
+            </h2>
+
+            <div class="row g-3" id="villesGrid">
+                
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-andelnans-90400.html" class="ville-card">
+                        <span class="ville-name">Andelnans</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-angeot-90150.html" class="ville-card">
+                        <span class="ville-name">Angeot</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-anjoutey-90170.html" class="ville-card">
+                        <span class="ville-name">Anjoutey</span>
+                        <span class="ville-zip">90170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-argiesans-90800.html" class="ville-card">
+                        <span class="ville-name">Argiésans</span>
+                        <span class="ville-zip">90800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-autrechene-90140.html" class="ville-card">
+                        <span class="ville-name">Autrechêne</span>
+                        <span class="ville-zip">90140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-auxelles-bas-90200.html" class="ville-card">
+                        <span class="ville-name">Auxelles-Bas</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-auxelles-haut-90200.html" class="ville-card">
+                        <span class="ville-name">Auxelles-Haut</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-banvillars-90800.html" class="ville-card">
+                        <span class="ville-name">Banvillars</span>
+                        <span class="ville-zip">90800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bavilliers-90800.html" class="ville-card">
+                        <span class="ville-name">Bavilliers</span>
+                        <span class="ville-zip">90800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-beaucourt-90500.html" class="ville-card">
+                        <span class="ville-name">Beaucourt</span>
+                        <span class="ville-zip">90500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-belfort-90000.html" class="ville-card">
+                        <span class="ville-name">Belfort</span>
+                        <span class="ville-zip">90000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bermont-90400.html" class="ville-card">
+                        <span class="ville-name">Bermont</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bessoncourt-90160.html" class="ville-card">
+                        <span class="ville-name">Bessoncourt</span>
+                        <span class="ville-zip">90160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bethonvilliers-90150.html" class="ville-card">
+                        <span class="ville-name">Bethonvilliers</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-boron-90100.html" class="ville-card">
+                        <span class="ville-name">Boron</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-botans-90400.html" class="ville-card">
+                        <span class="ville-name">Botans</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bourg-sous-chatelet-90110.html" class="ville-card">
+                        <span class="ville-name">Bourg-sous-Châtelet</span>
+                        <span class="ville-zip">90110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bourogne-90140.html" class="ville-card">
+                        <span class="ville-name">Bourogne</span>
+                        <span class="ville-zip">90140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-brebotte-90140.html" class="ville-card">
+                        <span class="ville-name">Brebotte</span>
+                        <span class="ville-zip">90140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bretagne-90130.html" class="ville-card">
+                        <span class="ville-name">Bretagne</span>
+                        <span class="ville-zip">90130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-buc-90800.html" class="ville-card">
+                        <span class="ville-name">Buc</span>
+                        <span class="ville-zip">90800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-charmois-90140.html" class="ville-card">
+                        <span class="ville-name">Charmois</span>
+                        <span class="ville-zip">90140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chaux-90330.html" class="ville-card">
+                        <span class="ville-name">Chaux</span>
+                        <span class="ville-zip">90330</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chavanatte-90100.html" class="ville-card">
+                        <span class="ville-name">Chavanatte</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chavannes-les-grands-90100.html" class="ville-card">
+                        <span class="ville-name">Chavannes-les-Grands</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chatenois-les-forges-90700.html" class="ville-card">
+                        <span class="ville-name">Châtenois-les-Forges</span>
+                        <span class="ville-zip">90700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chevremont-90340.html" class="ville-card">
+                        <span class="ville-name">Chèvremont</span>
+                        <span class="ville-zip">90340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-courcelles-90100.html" class="ville-card">
+                        <span class="ville-name">Courcelles</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-courtelevant-90100.html" class="ville-card">
+                        <span class="ville-name">Courtelevant</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cravanche-90300.html" class="ville-card">
+                        <span class="ville-name">Cravanche</span>
+                        <span class="ville-zip">90300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-croix-90100.html" class="ville-card">
+                        <span class="ville-name">Croix</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cunelieres-90150.html" class="ville-card">
+                        <span class="ville-name">Cunelières</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-danjoutin-90400.html" class="ville-card">
+                        <span class="ville-name">Danjoutin</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-delle-90100.html" class="ville-card">
+                        <span class="ville-name">Delle</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-denney-90160.html" class="ville-card">
+                        <span class="ville-name">Denney</span>
+                        <span class="ville-zip">90160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-dorans-90400.html" class="ville-card">
+                        <span class="ville-name">Dorans</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-eguenigue-90150.html" class="ville-card">
+                        <span class="ville-name">Eguenigue</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-essert-90850.html" class="ville-card">
+                        <span class="ville-name">Essert</span>
+                        <span class="ville-zip">90850</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-faverois-90100.html" class="ville-card">
+                        <span class="ville-name">Faverois</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-felon-90110.html" class="ville-card">
+                        <span class="ville-name">Felon</span>
+                        <span class="ville-zip">90110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-florimont-90100.html" class="ville-card">
+                        <span class="ville-name">Florimont</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fontaine-90150.html" class="ville-card">
+                        <span class="ville-name">Fontaine</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fontenelle-90340.html" class="ville-card">
+                        <span class="ville-name">Fontenelle</span>
+                        <span class="ville-zip">90340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-foussemagne-90150.html" class="ville-card">
+                        <span class="ville-name">Foussemagne</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-frais-90150.html" class="ville-card">
+                        <span class="ville-name">Frais</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-froidefontaine-90140.html" class="ville-card">
+                        <span class="ville-name">Froidefontaine</span>
+                        <span class="ville-zip">90140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-feche-l-eglise-90100.html" class="ville-card">
+                        <span class="ville-name">Fêche-l'Église</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-giromagny-90200.html" class="ville-card">
+                        <span class="ville-name">Giromagny</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-grandvillars-90600.html" class="ville-card">
+                        <span class="ville-name">Grandvillars</span>
+                        <span class="ville-zip">90600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-grosmagny-90200.html" class="ville-card">
+                        <span class="ville-name">Grosmagny</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-grosne-90100.html" class="ville-card">
+                        <span class="ville-name">Grosne</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-joncherey-90100.html" class="ville-card">
+                        <span class="ville-name">Joncherey</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-sous-chaux-90300.html" class="ville-card">
+                        <span class="ville-name">Lachapelle-sous-Chaux</span>
+                        <span class="ville-zip">90300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-sous-rougemont-90360.html" class="ville-card">
+                        <span class="ville-name">Lachapelle-sous-Rougemont</span>
+                        <span class="ville-zip">90360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lacollonge-90150.html" class="ville-card">
+                        <span class="ville-name">Lacollonge</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lagrange-90150.html" class="ville-card">
+                        <span class="ville-name">Lagrange</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lamadeleine-val-des-anges-90170.html" class="ville-card">
+                        <span class="ville-name">Lamadeleine-Val-des-Anges</span>
+                        <span class="ville-zip">90170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lariviere-90150.html" class="ville-card">
+                        <span class="ville-name">Larivière</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lebetain-90100.html" class="ville-card">
+                        <span class="ville-name">Lebetain</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lepuix-90200.html" class="ville-card">
+                        <span class="ville-name">Lepuix</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lepuix-neuf-90100.html" class="ville-card">
+                        <span class="ville-name">Lepuix-Neuf</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-leval-90110.html" class="ville-card">
+                        <span class="ville-name">Leval</span>
+                        <span class="ville-zip">90110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-menoncourt-90150.html" class="ville-card">
+                        <span class="ville-name">Menoncourt</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-meroux-moval-90400.html" class="ville-card">
+                        <span class="ville-name">Meroux-Moval</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montbouton-90500.html" class="ville-card">
+                        <span class="ville-name">Montbouton</span>
+                        <span class="ville-zip">90500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montreux-chateau-90130.html" class="ville-card">
+                        <span class="ville-name">Montreux-Château</span>
+                        <span class="ville-zip">90130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-morvillars-90120.html" class="ville-card">
+                        <span class="ville-name">Morvillars</span>
+                        <span class="ville-zip">90120</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mezire-90120.html" class="ville-card">
+                        <span class="ville-name">Méziré</span>
+                        <span class="ville-zip">90120</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-novillard-90340.html" class="ville-card">
+                        <span class="ville-name">Novillard</span>
+                        <span class="ville-zip">90340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-offemont-90300.html" class="ville-card">
+                        <span class="ville-name">Offemont</span>
+                        <span class="ville-zip">90300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-petit-croix-90130.html" class="ville-card">
+                        <span class="ville-name">Petit-Croix</span>
+                        <span class="ville-zip">90130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-petitefontaine-90360.html" class="ville-card">
+                        <span class="ville-name">Petitefontaine</span>
+                        <span class="ville-zip">90360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-petitmagny-90170.html" class="ville-card">
+                        <span class="ville-name">Petitmagny</span>
+                        <span class="ville-zip">90170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-phaffans-90150.html" class="ville-card">
+                        <span class="ville-name">Phaffans</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-perouse-90160.html" class="ville-card">
+                        <span class="ville-name">Pérouse</span>
+                        <span class="ville-zip">90160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-recouvrance-90140.html" class="ville-card">
+                        <span class="ville-name">Recouvrance</span>
+                        <span class="ville-zip">90140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-reppe-90150.html" class="ville-card">
+                        <span class="ville-name">Reppe</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-riervescemont-90200.html" class="ville-card">
+                        <span class="ville-name">Riervescemont</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-romagny-sous-rougemont-90110.html" class="ville-card">
+                        <span class="ville-name">Romagny-sous-Rougemont</span>
+                        <span class="ville-zip">90110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-roppe-90380.html" class="ville-card">
+                        <span class="ville-name">Roppe</span>
+                        <span class="ville-zip">90380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-rougegoutte-90200.html" class="ville-card">
+                        <span class="ville-name">Rougegoutte</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-rougemont-le-chateau-90110.html" class="ville-card">
+                        <span class="ville-name">Rougemont-le-Château</span>
+                        <span class="ville-zip">90110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-rechesy-90370.html" class="ville-card">
+                        <span class="ville-name">Réchésy</span>
+                        <span class="ville-zip">90370</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-dizier-l-eveque-90100.html" class="ville-card">
+                        <span class="ville-name">Saint-Dizier-l'Évêque</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-germain-le-chatelet-90110.html" class="ville-card">
+                        <span class="ville-name">Saint-Germain-le-Châtelet</span>
+                        <span class="ville-zip">90110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sermamagny-90300.html" class="ville-card">
+                        <span class="ville-name">Sermamagny</span>
+                        <span class="ville-zip">90300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sevenans-90400.html" class="ville-card">
+                        <span class="ville-name">Sevenans</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-suarce-90100.html" class="ville-card">
+                        <span class="ville-name">Suarce</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-thiancourt-90100.html" class="ville-card">
+                        <span class="ville-name">Thiancourt</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-trevenans-90400.html" class="ville-card">
+                        <span class="ville-name">Trévenans</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-urcerey-90800.html" class="ville-card">
+                        <span class="ville-name">Urcerey</span>
+                        <span class="ville-zip">90800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-valdoie-90300.html" class="ville-card">
+                        <span class="ville-name">Valdoie</span>
+                        <span class="ville-zip">90300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vauthiermont-90150.html" class="ville-card">
+                        <span class="ville-name">Vauthiermont</span>
+                        <span class="ville-zip">90150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vellescot-90100.html" class="ville-card">
+                        <span class="ville-name">Vellescot</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vescemont-90200.html" class="ville-card">
+                        <span class="ville-name">Vescemont</span>
+                        <span class="ville-zip">90200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-villars-le-sec-90100.html" class="ville-card">
+                        <span class="ville-name">Villars-le-Sec</span>
+                        <span class="ville-zip">90100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vetrigne-90300.html" class="ville-card">
+                        <span class="ville-name">Vétrigne</span>
+                        <span class="ville-zip">90300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vezelois-90400.html" class="ville-card">
+                        <span class="ville-name">Vézelois</span>
+                        <span class="ville-zip">90400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-eloie-90300.html" class="ville-card">
+                        <span class="ville-name">Éloie</span>
+                        <span class="ville-zip">90300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-etueffont-90170.html" class="ville-card">
+                        <span class="ville-name">Étueffont</span>
+                        <span class="ville-zip">90170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-evette-salbert-90350.html" class="ville-card">
+                        <span class="ville-name">Évette-Salbert</span>
+                        <span class="ville-zip">90350</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding bg-primary text-white mt-5">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-4">Besoin d'une agence web dans le Territoire de Belfort ?</h2>
+            <p class="lead mb-4">Contactez-nous pour un devis gratuit et personnalisé.</p>
+            <a href="../index.html#contact" class="btn btn-light btn-lg px-5">
+                <i class="bi bi-envelope"></i> Demander un Devis
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-globe2"></i> Agence Web France</h5>
+                    <p class="text-white-50">
+                        Votre partenaire de confiance pour tous vos projets web dans le Territoire de Belfort et partout en France.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="../index.html#services" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="../index.html#annuaire" class="text-white-50 text-decoration-none">Annuaire</a></li>
+                        <li class="mb-2"><a href="../index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> France</li>
+                        <li class="mb-2"><a href="tel:+33641127926" class="text-white-50 text-decoration-none"><i class="bi bi-telephone"></i> 06 41 12 79 26</a></li>
+                        <li class="mb-2"><a href="mailto:contact.capitainepub@gmail.com" class="text-white-50 text-decoration-none"><i class="bi bi-envelope"></i> contact.capitainepub@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <p class="text-center text-white-50 mb-0">
+                &copy; 2024 Agence Web France - Annuaire Territoire de Belfort. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filtrage des villes
+        document.getElementById('filterVilles').addEventListener('input', function() {
+            const filter = this.value.toLowerCase();
+            const cards = document.querySelectorAll('#villesGrid > div');
+
+            cards.forEach(card => {
+                const name = card.querySelector('.ville-name').textContent.toLowerCase();
+                const zip = card.querySelector('.ville-zip').textContent.toLowerCase();
+
+                if (name.includes(filter) || zip.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

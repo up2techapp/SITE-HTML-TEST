@@ -561,6 +561,109 @@ textarea:focus {
 }
 
 /* ===========================
+   Section Annuaire
+   =========================== */
+.search-box {
+    border-radius: 15px;
+    background: var(--white-color);
+}
+
+.search-box .input-group-text {
+    border-radius: 10px 0 0 10px;
+}
+
+.search-box .form-control {
+    border-radius: 0 10px 10px 0;
+    font-size: 1.1rem;
+}
+
+.search-box .form-control:focus {
+    box-shadow: none;
+    border-color: #e9ecef;
+}
+
+.search-results {
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+
+.search-results.show {
+    display: block;
+}
+
+.search-result-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e9ecef;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-result-item:hover {
+    background-color: var(--light-color);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item .city-name {
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.search-result-item .city-zip {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.dept-link {
+    display: block;
+    padding: 8px 12px;
+    background: var(--light-color);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all var(--transition-speed) ease;
+    font-size: 0.9rem;
+}
+
+.dept-link:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+    transform: translateX(5px);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--primary-color);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(13, 110, 253, 0.25);
+}
+
+#deptModalContent a {
+    display: block;
+    padding: 6px 10px;
+    background: var(--light-color);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 0.85rem;
+    transition: all var(--transition-speed) ease;
+}
+
+#deptModalContent a:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* ===========================
    Print styles
    =========================== */
 @media print {

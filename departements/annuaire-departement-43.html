@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Agence Web Haute-Loire (43) - Création de Sites Internet</title>
+    <meta name="description" content="Agence web dans le Haute-Loire (43). Création de sites internet et solutions digitales pour 258 villes du département. Devis gratuit.">
+    <meta name="keywords" content="agence web Haute-Loire, création site internet 43, développement web Haute-Loire">
+    <meta name="author" content="Agence Web France">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agence Web Haute-Loire (43) - Toutes les villes">
+    <meta property="og:description" content="Trouvez votre agence web dans le Haute-Loire - 258 villes couvertes">
+
+    <link rel="canonical" href="https://www.agencewebfrance.fr/departements/annuaire-departement-43.html">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .ville-card {
+            display: block;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #212529;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+        .ville-card:hover {
+            background: #0d6efd;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+        }
+        .ville-card:hover .ville-zip {
+            color: rgba(255,255,255,0.8);
+        }
+        .ville-name {
+            display: block;
+            font-weight: 500;
+        }
+        .ville-zip {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .dept-stats {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .search-filter {
+            position: sticky;
+            top: 80px;
+            z-index: 100;
+            background: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="../index.html">
+                    <i class="bi bi-globe2"></i> Agence Web France
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#about">À Propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html#annuaire">Annuaire</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary text-white ms-lg-3 px-4" href="../index.html#contact">Devis Gratuit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-padding" style="padding-top: 120px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html#annuaire">Annuaire</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Haute-Loire (43)</li>
+                </ol>
+            </nav>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3">
+                        <i class="bi bi-geo-alt-fill text-primary"></i>
+                        Agence Web dans le <span class="text-primary">Haute-Loire</span>
+                    </h1>
+                    <p class="lead text-muted">
+                        Découvrez nos services de création de sites internet et solutions digitales
+                        dans les 258 villes du département Haute-Loire (43).
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="dept-stats text-center">
+                        <div class="display-4 fw-bold">258</div>
+                        <div>villes couvertes</div>
+                        <hr class="my-3 opacity-50">
+                        <div class="h5 mb-0">Haute-Loire (43)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="search-filter">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                            <input type="text" id="filterVilles" class="form-control"
+                                   placeholder="Filtrer les villes du Haute-Loire...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="h4 fw-bold mb-4">
+                <i class="bi bi-building text-primary"></i>
+                Toutes les villes du Haute-Loire
+            </h2>
+
+            <div class="row g-3" id="villesGrid">
+                
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-agnat-43100.html" class="ville-card">
+                        <span class="ville-name">Agnat</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-aiguilhe-43000.html" class="ville-card">
+                        <span class="ville-name">Aiguilhe</span>
+                        <span class="ville-zip">43000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-alleyrac-43150.html" class="ville-card">
+                        <span class="ville-name">Alleyrac</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-alleyras-43580.html" class="ville-card">
+                        <span class="ville-name">Alleyras</span>
+                        <span class="ville-zip">43580</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ally-43380.html" class="ville-card">
+                        <span class="ville-name">Ally</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-allegre-43270.html" class="ville-card">
+                        <span class="ville-name">Allègre</span>
+                        <span class="ville-zip">43270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-araules-43200.html" class="ville-card">
+                        <span class="ville-name">Araules</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-arlempdes-43490.html" class="ville-card">
+                        <span class="ville-name">Arlempdes</span>
+                        <span class="ville-zip">43490</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-arlet-43380.html" class="ville-card">
+                        <span class="ville-name">Arlet</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-arsac-en-velay-43700.html" class="ville-card">
+                        <span class="ville-name">Arsac-en-Velay</span>
+                        <span class="ville-zip">43700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-aubazat-43380.html" class="ville-card">
+                        <span class="ville-name">Aubazat</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-aurec-sur-loire-43110.html" class="ville-card">
+                        <span class="ville-name">Aurec-sur-Loire</span>
+                        <span class="ville-zip">43110</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-autrac-43450.html" class="ville-card">
+                        <span class="ville-name">Autrac</span>
+                        <span class="ville-zip">43450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-auvers-43300.html" class="ville-card">
+                        <span class="ville-name">Auvers</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-auzon-43390.html" class="ville-card">
+                        <span class="ville-name">Auzon</span>
+                        <span class="ville-zip">43390</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-azerat-43390.html" class="ville-card">
+                        <span class="ville-name">Azérat</span>
+                        <span class="ville-zip">43390</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bains-43370.html" class="ville-card">
+                        <span class="ville-name">Bains</span>
+                        <span class="ville-zip">43370</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-barges-43340.html" class="ville-card">
+                        <span class="ville-name">Barges</span>
+                        <span class="ville-zip">43340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bas-en-basset-43210.html" class="ville-card">
+                        <span class="ville-name">Bas-en-Basset</span>
+                        <span class="ville-zip">43210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-beaulieu-43800.html" class="ville-card">
+                        <span class="ville-name">Beaulieu</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-beaumont-43100.html" class="ville-card">
+                        <span class="ville-name">Beaumont</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-beaune-sur-arzon-43500.html" class="ville-card">
+                        <span class="ville-name">Beaune-sur-Arzon</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-beaux-43200.html" class="ville-card">
+                        <span class="ville-name">Beaux</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-beauzac-43590.html" class="ville-card">
+                        <span class="ville-name">Beauzac</span>
+                        <span class="ville-zip">43590</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bellevue-la-montagne-43350.html" class="ville-card">
+                        <span class="ville-name">Bellevue-la-Montagne</span>
+                        <span class="ville-zip">43350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-berbezit-43160.html" class="ville-card">
+                        <span class="ville-name">Berbezit</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bessamorel-43200.html" class="ville-card">
+                        <span class="ville-name">Bessamorel</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-blanzac-43350.html" class="ville-card">
+                        <span class="ville-name">Blanzac</span>
+                        <span class="ville-zip">43350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-blassac-43380.html" class="ville-card">
+                        <span class="ville-name">Blassac</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-blavozy-43700.html" class="ville-card">
+                        <span class="ville-name">Blavozy</span>
+                        <span class="ville-zip">43700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-blesle-43450.html" class="ville-card">
+                        <span class="ville-name">Blesle</span>
+                        <span class="ville-zip">43450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-boisset-43500.html" class="ville-card">
+                        <span class="ville-name">Boisset</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bonneval-43160.html" class="ville-card">
+                        <span class="ville-name">Bonneval</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-borne-43350.html" class="ville-card">
+                        <span class="ville-name">Borne</span>
+                        <span class="ville-zip">43350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-bournoncle-saint-pierre-43360.html" class="ville-card">
+                        <span class="ville-name">Bournoncle-Saint-Pierre</span>
+                        <span class="ville-zip">43360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-brioude-43100.html" class="ville-card">
+                        <span class="ville-name">Brioude</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-brives-charensac-43700.html" class="ville-card">
+                        <span class="ville-name">Brives-Charensac</span>
+                        <span class="ville-zip">43700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cayres-43510.html" class="ville-card">
+                        <span class="ville-name">Cayres</span>
+                        <span class="ville-zip">43510</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cerzat-43380.html" class="ville-card">
+                        <span class="ville-name">Cerzat</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ceyssac-43000.html" class="ville-card">
+                        <span class="ville-name">Ceyssac</span>
+                        <span class="ville-zip">43000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chadrac-43770.html" class="ville-card">
+                        <span class="ville-name">Chadrac</span>
+                        <span class="ville-zip">43770</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chadron-43150.html" class="ville-card">
+                        <span class="ville-name">Chadron</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chamalieres-sur-loire-43800.html" class="ville-card">
+                        <span class="ville-name">Chamalières-sur-Loire</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chambezon-43410.html" class="ville-card">
+                        <span class="ville-name">Chambezon</span>
+                        <span class="ville-zip">43410</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-champagnac-le-vieux-43440.html" class="ville-card">
+                        <span class="ville-name">Champagnac-le-Vieux</span>
+                        <span class="ville-zip">43440</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-champclause-43260.html" class="ville-card">
+                        <span class="ville-name">Champclause</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chanaleilles-43170.html" class="ville-card">
+                        <span class="ville-name">Chanaleilles</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chaniat-43100.html" class="ville-card">
+                        <span class="ville-name">Chaniat</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chanteuges-43300.html" class="ville-card">
+                        <span class="ville-name">Chanteuges</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-charraix-43300.html" class="ville-card">
+                        <span class="ville-name">Charraix</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chaspinhac-43700.html" class="ville-card">
+                        <span class="ville-name">Chaspinhac</span>
+                        <span class="ville-zip">43700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chaspuzac-43320.html" class="ville-card">
+                        <span class="ville-name">Chaspuzac</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chassagnes-43230.html" class="ville-card">
+                        <span class="ville-name">Chassagnes</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chassignolles-43440.html" class="ville-card">
+                        <span class="ville-name">Chassignolles</span>
+                        <span class="ville-zip">43440</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chastel-43300.html" class="ville-card">
+                        <span class="ville-name">Chastel</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chaudeyrolles-43430.html" class="ville-card">
+                        <span class="ville-name">Chaudeyrolles</span>
+                        <span class="ville-zip">43430</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chavaniac-lafayette-43230.html" class="ville-card">
+                        <span class="ville-name">Chavaniac-Lafayette</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chazelles-43300.html" class="ville-card">
+                        <span class="ville-name">Chazelles</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chenereilles-43190.html" class="ville-card">
+                        <span class="ville-name">Chenereilles</span>
+                        <span class="ville-zip">43190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chilhac-43380.html" class="ville-card">
+                        <span class="ville-name">Chilhac</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-chomelix-43500.html" class="ville-card">
+                        <span class="ville-name">Chomelix</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cistrieres-43160.html" class="ville-card">
+                        <span class="ville-name">Cistrières</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cohade-43100.html" class="ville-card">
+                        <span class="ville-name">Cohade</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-collat-43230.html" class="ville-card">
+                        <span class="ville-name">Collat</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-connangles-43160.html" class="ville-card">
+                        <span class="ville-name">Connangles</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-costaros-43490.html" class="ville-card">
+                        <span class="ville-name">Costaros</span>
+                        <span class="ville-zip">43490</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-coubon-43700.html" class="ville-card">
+                        <span class="ville-name">Coubon</span>
+                        <span class="ville-zip">43700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-couteuges-43230.html" class="ville-card">
+                        <span class="ville-name">Couteuges</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-craponne-sur-arzon-43500.html" class="ville-card">
+                        <span class="ville-name">Craponne-sur-Arzon</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cronce-43300.html" class="ville-card">
+                        <span class="ville-name">Cronce</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cubelles-43170.html" class="ville-card">
+                        <span class="ville-name">Cubelles</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-cussac-sur-loire-43370.html" class="ville-card">
+                        <span class="ville-name">Cussac-sur-Loire</span>
+                        <span class="ville-zip">43370</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ceaux-d-allegre-43270.html" class="ville-card">
+                        <span class="ville-name">Céaux-d'Allègre</span>
+                        <span class="ville-zip">43270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-desges-43300.html" class="ville-card">
+                        <span class="ville-name">Desges</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-domeyrat-43230.html" class="ville-card">
+                        <span class="ville-name">Domeyrat</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-dunieres-43220.html" class="ville-card">
+                        <span class="ville-name">Dunières</span>
+                        <span class="ville-zip">43220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-espalem-43450.html" class="ville-card">
+                        <span class="ville-name">Espalem</span>
+                        <span class="ville-zip">43450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-espaly-saint-marcel-43000.html" class="ville-card">
+                        <span class="ville-name">Espaly-Saint-Marcel</span>
+                        <span class="ville-zip">43000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-esplantas-vazeilles-43170.html" class="ville-card">
+                        <span class="ville-name">Esplantas-Vazeilles</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fay-sur-lignon-43430.html" class="ville-card">
+                        <span class="ville-name">Fay-sur-Lignon</span>
+                        <span class="ville-zip">43430</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ferrussac-43300.html" class="ville-card">
+                        <span class="ville-name">Ferrussac</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fix-saint-geneys-43320.html" class="ville-card">
+                        <span class="ville-name">Fix-Saint-Geneys</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-fontannes-43100.html" class="ville-card">
+                        <span class="ville-name">Fontannes</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-freycenet-la-cuche-43150.html" class="ville-card">
+                        <span class="ville-name">Freycenet-la-Cuche</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-freycenet-la-tour-43150.html" class="ville-card">
+                        <span class="ville-name">Freycenet-la-Tour</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-frugeres-les-mines-43250.html" class="ville-card">
+                        <span class="ville-name">Frugerès-les-Mines</span>
+                        <span class="ville-zip">43250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-frugieres-le-pin-43230.html" class="ville-card">
+                        <span class="ville-name">Frugières-le-Pin</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-felines-43160.html" class="ville-card">
+                        <span class="ville-name">Félines</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-goudet-43150.html" class="ville-card">
+                        <span class="ville-name">Goudet</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-grazac-43200.html" class="ville-card">
+                        <span class="ville-name">Grazac</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-grenier-montgon-43450.html" class="ville-card">
+                        <span class="ville-name">Grenier-Montgon</span>
+                        <span class="ville-zip">43450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-grezes-43170.html" class="ville-card">
+                        <span class="ville-name">Grèzes</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-javaugues-43100.html" class="ville-card">
+                        <span class="ville-name">Javaugues</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-jax-43230.html" class="ville-card">
+                        <span class="ville-name">Jax</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-josat-43230.html" class="ville-card">
+                        <span class="ville-name">Josat</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-jullianges-43500.html" class="ville-card">
+                        <span class="ville-name">Jullianges</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-labesseyre-saint-mary-43170.html" class="ville-card">
+                        <span class="ville-name">LaBesseyre-Saint-Mary</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachaise-dieu-43160.html" class="ville-card">
+                        <span class="ville-name">LaChaise-Dieu</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-bertin-43270.html" class="ville-card">
+                        <span class="ville-name">LaChapelle-Bertin</span>
+                        <span class="ville-zip">43270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-geneste-43160.html" class="ville-card">
+                        <span class="ville-name">LaChapelle-Geneste</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachapelle-d-aurec-43120.html" class="ville-card">
+                        <span class="ville-name">LaChapelle-d'Aurec</span>
+                        <span class="ville-zip">43120</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lachomette-43230.html" class="ville-card">
+                        <span class="ville-name">LaChomette</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-laseauve-sur-semene-43140.html" class="ville-card">
+                        <span class="ville-name">LaSéauve-sur-Semène</span>
+                        <span class="ville-zip">43140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lafarre-43490.html" class="ville-card">
+                        <span class="ville-name">Lafarre</span>
+                        <span class="ville-zip">43490</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lamothe-43100.html" class="ville-card">
+                        <span class="ville-name">Lamothe</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-landos-43340.html" class="ville-card">
+                        <span class="ville-name">Landos</span>
+                        <span class="ville-zip">43340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-langeac-43300.html" class="ville-card">
+                        <span class="ville-name">Langeac</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lantriac-43260.html" class="ville-card">
+                        <span class="ville-name">Lantriac</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lapte-43200.html" class="ville-card">
+                        <span class="ville-name">Lapte</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-laussonne-43150.html" class="ville-card">
+                        <span class="ville-name">Laussonne</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-laval-sur-doulon-43440.html" class="ville-card">
+                        <span class="ville-name">Laval-sur-Doulon</span>
+                        <span class="ville-zip">43440</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavaudieu-43100.html" class="ville-card">
+                        <span class="ville-name">Lavaudieu</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavoute-chilhac-43380.html" class="ville-card">
+                        <span class="ville-name">Lavoûte-Chilhac</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lavoute-sur-loire-43800.html" class="ville-card">
+                        <span class="ville-name">Lavoûte-sur-Loire</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lebouchet-saint-nicolas-43510.html" class="ville-card">
+                        <span class="ville-name">LeBouchet-Saint-Nicolas</span>
+                        <span class="ville-zip">43510</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lebrignon-43370.html" class="ville-card">
+                        <span class="ville-name">LeBrignon</span>
+                        <span class="ville-zip">43370</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lechambon-sur-lignon-43400.html" class="ville-card">
+                        <span class="ville-name">LeChambon-sur-Lignon</span>
+                        <span class="ville-zip">43400</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lemas-de-tence-43190.html" class="ville-card">
+                        <span class="ville-name">LeMas-de-Tence</span>
+                        <span class="ville-zip">43190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lemonastier-sur-gazeille-43150.html" class="ville-card">
+                        <span class="ville-name">LeMonastier-sur-Gazeille</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lemonteil-43700.html" class="ville-card">
+                        <span class="ville-name">LeMonteil</span>
+                        <span class="ville-zip">43700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lepertuis-43200.html" class="ville-card">
+                        <span class="ville-name">LePertuis</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lepuy-en-velay-43000.html" class="ville-card">
+                        <span class="ville-name">LePuy-en-Velay</span>
+                        <span class="ville-zip">43000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-levernet-43320.html" class="ville-card">
+                        <span class="ville-name">LeVernet</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lempdes-sur-allagnon-43410.html" class="ville-card">
+                        <span class="ville-name">Lempdes-sur-Allagnon</span>
+                        <span class="ville-zip">43410</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lesestables-43150.html" class="ville-card">
+                        <span class="ville-name">LesEstables</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lesvastres-43430.html" class="ville-card">
+                        <span class="ville-name">LesVastres</span>
+                        <span class="ville-zip">43430</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lesvillettes-43600.html" class="ville-card">
+                        <span class="ville-name">LesVillettes</span>
+                        <span class="ville-zip">43600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-leyvaux-43450.html" class="ville-card">
+                        <span class="ville-name">Leyvaux</span>
+                        <span class="ville-zip">43450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lissac-43350.html" class="ville-card">
+                        <span class="ville-name">Lissac</span>
+                        <span class="ville-zip">43350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lorlanges-43360.html" class="ville-card">
+                        <span class="ville-name">Lorlanges</span>
+                        <span class="ville-zip">43360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-loudes-43320.html" class="ville-card">
+                        <span class="ville-name">Loudes</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-lubilhac-43100.html" class="ville-card">
+                        <span class="ville-name">Lubilhac</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-leotoing-43410.html" class="ville-card">
+                        <span class="ville-name">Léotoing</span>
+                        <span class="ville-zip">43410</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-malrevers-43800.html" class="ville-card">
+                        <span class="ville-name">Malrevers</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-malvalette-43210.html" class="ville-card">
+                        <span class="ville-name">Malvalette</span>
+                        <span class="ville-zip">43210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-malvieres-43160.html" class="ville-card">
+                        <span class="ville-name">Malvières</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mazerat-aurouze-43230.html" class="ville-card">
+                        <span class="ville-name">Mazerat-Aurouze</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mazet-saint-voy-43520.html" class="ville-card">
+                        <span class="ville-name">Mazet-Saint-Voy</span>
+                        <span class="ville-zip">43520</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mazeyrat-d-allier-43300.html" class="ville-card">
+                        <span class="ville-name">Mazeyrat-d'Allier</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-merc-ur-43100.html" class="ville-card">
+                        <span class="ville-name">Mercœur</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-monistrol-d-allier-43580.html" class="ville-card">
+                        <span class="ville-name">Monistrol-d'Allier</span>
+                        <span class="ville-zip">43580</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-monistrol-sur-loire-43120.html" class="ville-card">
+                        <span class="ville-name">Monistrol-sur-Loire</span>
+                        <span class="ville-zip">43120</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-monlet-43270.html" class="ville-card">
+                        <span class="ville-name">Monlet</span>
+                        <span class="ville-zip">43270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montclard-43230.html" class="ville-card">
+                        <span class="ville-name">Montclard</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montfaucon-en-velay-43290.html" class="ville-card">
+                        <span class="ville-name">Montfaucon-en-Velay</span>
+                        <span class="ville-zip">43290</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montregard-43290.html" class="ville-card">
+                        <span class="ville-name">Montregard</span>
+                        <span class="ville-zip">43290</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-montusclat-43260.html" class="ville-card">
+                        <span class="ville-name">Montusclat</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-moudeyres-43150.html" class="ville-card">
+                        <span class="ville-name">Moudeyres</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-mezeres-43800.html" class="ville-card">
+                        <span class="ville-name">Mézères</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-ouides-43510.html" class="ville-card">
+                        <span class="ville-name">Ouides</span>
+                        <span class="ville-zip">43510</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-paulhac-43100.html" class="ville-card">
+                        <span class="ville-name">Paulhac</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-paulhaguet-43230.html" class="ville-card">
+                        <span class="ville-name">Paulhaguet</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pinols-43300.html" class="ville-card">
+                        <span class="ville-name">Pinols</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-polignac-43000.html" class="ville-card">
+                        <span class="ville-name">Polignac</span>
+                        <span class="ville-zip">43000</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pont-salomon-43330.html" class="ville-card">
+                        <span class="ville-name">Pont-Salomon</span>
+                        <span class="ville-zip">43330</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pradelles-43420.html" class="ville-card">
+                        <span class="ville-name">Pradelles</span>
+                        <span class="ville-zip">43420</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-prades-43300.html" class="ville-card">
+                        <span class="ville-name">Prades</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-presailles-43150.html" class="ville-card">
+                        <span class="ville-name">Présailles</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-pebrac-43300.html" class="ville-card">
+                        <span class="ville-name">Pébrac</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-queyrieres-43260.html" class="ville-card">
+                        <span class="ville-name">Queyrières</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-raucoules-43290.html" class="ville-card">
+                        <span class="ville-name">Raucoules</span>
+                        <span class="ville-zip">43290</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-rauret-43340.html" class="ville-card">
+                        <span class="ville-name">Rauret</span>
+                        <span class="ville-zip">43340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-retournac-43130.html" class="ville-card">
+                        <span class="ville-name">Retournac</span>
+                        <span class="ville-zip">43130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-riotord-43220.html" class="ville-card">
+                        <span class="ville-name">Riotord</span>
+                        <span class="ville-zip">43220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-roche-en-regnier-43810.html" class="ville-card">
+                        <span class="ville-name">Roche-en-Régnier</span>
+                        <span class="ville-zip">43810</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-rosieres-43800.html" class="ville-card">
+                        <span class="ville-name">Rosières</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-andre-de-chalencon-43130.html" class="ville-card">
+                        <span class="ville-name">Saint-André-de-Chalencon</span>
+                        <span class="ville-zip">43130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-arcons-d-allier-43300.html" class="ville-card">
+                        <span class="ville-name">Saint-Arcons-d'Allier</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-arcons-de-barges-43420.html" class="ville-card">
+                        <span class="ville-name">Saint-Arcons-de-Barges</span>
+                        <span class="ville-zip">43420</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-austremoine-43380.html" class="ville-card">
+                        <span class="ville-name">Saint-Austremoine</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-beauzire-43100.html" class="ville-card">
+                        <span class="ville-name">Saint-Beauzire</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-bonnet-le-froid-43290.html" class="ville-card">
+                        <span class="ville-name">Saint-Bonnet-le-Froid</span>
+                        <span class="ville-zip">43290</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-berain-43300.html" class="ville-card">
+                        <span class="ville-name">Saint-Bérain</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-christophe-d-allier-43340.html" class="ville-card">
+                        <span class="ville-name">Saint-Christophe-d'Allier</span>
+                        <span class="ville-zip">43340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-christophe-sur-dolaison-43370.html" class="ville-card">
+                        <span class="ville-name">Saint-Christophe-sur-Dolaison</span>
+                        <span class="ville-zip">43370</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-cirgues-43380.html" class="ville-card">
+                        <span class="ville-name">Saint-Cirgues</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-didier-en-velay-43140.html" class="ville-card">
+                        <span class="ville-name">Saint-Didier-en-Velay</span>
+                        <span class="ville-zip">43140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-didier-sur-doulon-43440.html" class="ville-card">
+                        <span class="ville-name">Saint-Didier-sur-Doulon</span>
+                        <span class="ville-zip">43440</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-ferreol-d-auroure-43330.html" class="ville-card">
+                        <span class="ville-name">Saint-Ferréol-d'Auroure</span>
+                        <span class="ville-zip">43330</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-front-43550.html" class="ville-card">
+                        <span class="ville-name">Saint-Front</span>
+                        <span class="ville-zip">43550</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-geneys-pres-saint-paulien-43350.html" class="ville-card">
+                        <span class="ville-name">Saint-Geneys-près-Saint-Paulien</span>
+                        <span class="ville-zip">43350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-georges-lagricol-43500.html" class="ville-card">
+                        <span class="ville-name">Saint-Georges-Lagricol</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-georges-d-aurac-43230.html" class="ville-card">
+                        <span class="ville-name">Saint-Georges-d'Aurac</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-germain-laprade-43700.html" class="ville-card">
+                        <span class="ville-name">Saint-Germain-Laprade</span>
+                        <span class="ville-zip">43700</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-geron-43360.html" class="ville-card">
+                        <span class="ville-name">Saint-Géron</span>
+                        <span class="ville-zip">43360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-haon-43340.html" class="ville-card">
+                        <span class="ville-name">Saint-Haon</span>
+                        <span class="ville-zip">43340</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-hilaire-43390.html" class="ville-card">
+                        <span class="ville-name">Saint-Hilaire</span>
+                        <span class="ville-zip">43390</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-hostien-43260.html" class="ville-card">
+                        <span class="ville-name">Saint-Hostien</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-ilpize-43380.html" class="ville-card">
+                        <span class="ville-name">Saint-Ilpize</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-jean-lachalm-43510.html" class="ville-card">
+                        <span class="ville-name">Saint-Jean-Lachalm</span>
+                        <span class="ville-zip">43510</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-jean-d-aubrigoux-43500.html" class="ville-card">
+                        <span class="ville-name">Saint-Jean-d'Aubrigoux</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-jean-de-nay-43320.html" class="ville-card">
+                        <span class="ville-name">Saint-Jean-de-Nay</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-jeures-43200.html" class="ville-card">
+                        <span class="ville-name">Saint-Jeures</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-julien-chapteuil-43260.html" class="ville-card">
+                        <span class="ville-name">Saint-Julien-Chapteuil</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-julien-molhesabate-43220.html" class="ville-card">
+                        <span class="ville-name">Saint-Julien-Molhesabate</span>
+                        <span class="ville-zip">43220</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-julien-d-ance-43500.html" class="ville-card">
+                        <span class="ville-name">Saint-Julien-d'Ance</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-julien-des-chazes-43300.html" class="ville-card">
+                        <span class="ville-name">Saint-Julien-des-Chazes</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-julien-du-pinet-43200.html" class="ville-card">
+                        <span class="ville-name">Saint-Julien-du-Pinet</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-just-malmont-43240.html" class="ville-card">
+                        <span class="ville-name">Saint-Just-Malmont</span>
+                        <span class="ville-zip">43240</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-just-pres-brioude-43100.html" class="ville-card">
+                        <span class="ville-name">Saint-Just-près-Brioude</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-laurent-chabreuges-43100.html" class="ville-card">
+                        <span class="ville-name">Saint-Laurent-Chabreuges</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-martin-de-fugeres-43150.html" class="ville-card">
+                        <span class="ville-name">Saint-Martin-de-Fugères</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-maurice-de-lignon-43200.html" class="ville-card">
+                        <span class="ville-name">Saint-Maurice-de-Lignon</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pal-de-chalencon-43500.html" class="ville-card">
+                        <span class="ville-name">Saint-Pal-de-Chalencon</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pal-de-mons-43620.html" class="ville-card">
+                        <span class="ville-name">Saint-Pal-de-Mons</span>
+                        <span class="ville-zip">43620</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pal-de-senouire-43160.html" class="ville-card">
+                        <span class="ville-name">Saint-Pal-de-Senouire</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-paul-de-tartas-43420.html" class="ville-card">
+                        <span class="ville-name">Saint-Paul-de-Tartas</span>
+                        <span class="ville-zip">43420</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-paulien-43350.html" class="ville-card">
+                        <span class="ville-name">Saint-Paulien</span>
+                        <span class="ville-zip">43350</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pierre-eynac-43260.html" class="ville-card">
+                        <span class="ville-name">Saint-Pierre-Eynac</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-pierre-du-champ-43810.html" class="ville-card">
+                        <span class="ville-name">Saint-Pierre-du-Champ</span>
+                        <span class="ville-zip">43810</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-privat-d-allier-43580.html" class="ville-card">
+                        <span class="ville-name">Saint-Privat-d'Allier</span>
+                        <span class="ville-zip">43580</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-privat-du-dragon-43380.html" class="ville-card">
+                        <span class="ville-name">Saint-Privat-du-Dragon</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-prejet-armandon-43230.html" class="ville-card">
+                        <span class="ville-name">Saint-Préjet-Armandon</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-prejet-d-allier-43580.html" class="ville-card">
+                        <span class="ville-name">Saint-Préjet-d'Allier</span>
+                        <span class="ville-zip">43580</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-romain-lachalm-43620.html" class="ville-card">
+                        <span class="ville-name">Saint-Romain-Lachalm</span>
+                        <span class="ville-zip">43620</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-vert-43440.html" class="ville-card">
+                        <span class="ville-name">Saint-Vert</span>
+                        <span class="ville-zip">43440</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-victor-malescours-43140.html" class="ville-card">
+                        <span class="ville-name">Saint-Victor-Malescours</span>
+                        <span class="ville-zip">43140</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-victor-sur-arlanc-43500.html" class="ville-card">
+                        <span class="ville-name">Saint-Victor-sur-Arlanc</span>
+                        <span class="ville-zip">43500</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-vidal-43320.html" class="ville-card">
+                        <span class="ville-name">Saint-Vidal</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-vincent-43800.html" class="ville-card">
+                        <span class="ville-name">Saint-Vincent</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-venerand-43580.html" class="ville-card">
+                        <span class="ville-name">Saint-Vénérand</span>
+                        <span class="ville-zip">43580</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-etienne-lardeyrol-43260.html" class="ville-card">
+                        <span class="ville-name">Saint-Étienne-Lardeyrol</span>
+                        <span class="ville-zip">43260</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-etienne-du-vigan-43420.html" class="ville-card">
+                        <span class="ville-name">Saint-Étienne-du-Vigan</span>
+                        <span class="ville-zip">43420</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saint-etienne-sur-blesle-43450.html" class="ville-card">
+                        <span class="ville-name">Saint-Étienne-sur-Blesle</span>
+                        <span class="ville-zip">43450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sainte-eugenie-de-villeneuve-43230.html" class="ville-card">
+                        <span class="ville-name">Sainte-Eugénie-de-Villeneuve</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sainte-florine-43250.html" class="ville-card">
+                        <span class="ville-name">Sainte-Florine</span>
+                        <span class="ville-zip">43250</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sainte-marguerite-43230.html" class="ville-card">
+                        <span class="ville-name">Sainte-Marguerite</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sainte-sigolene-43600.html" class="ville-card">
+                        <span class="ville-name">Sainte-Sigolène</span>
+                        <span class="ville-zip">43600</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-salettes-43150.html" class="ville-card">
+                        <span class="ville-name">Salettes</span>
+                        <span class="ville-zip">43150</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-salzuit-43230.html" class="ville-card">
+                        <span class="ville-name">Salzuit</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sanssac-l-eglise-43320.html" class="ville-card">
+                        <span class="ville-name">Sanssac-l'Église</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-saugues-43170.html" class="ville-card">
+                        <span class="ville-name">Saugues</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-sembadel-43160.html" class="ville-card">
+                        <span class="ville-name">Sembadel</span>
+                        <span class="ville-zip">43160</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-siaugues-sainte-marie-43300.html" class="ville-card">
+                        <span class="ville-name">Siaugues-Sainte-Marie</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-solignac-sous-roche-43130.html" class="ville-card">
+                        <span class="ville-name">Solignac-sous-Roche</span>
+                        <span class="ville-zip">43130</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-solignac-sur-loire-43370.html" class="ville-card">
+                        <span class="ville-name">Solignac-sur-Loire</span>
+                        <span class="ville-zip">43370</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-seneujols-43510.html" class="ville-card">
+                        <span class="ville-name">Séneujols</span>
+                        <span class="ville-zip">43510</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-tailhac-43300.html" class="ville-card">
+                        <span class="ville-name">Tailhac</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-tence-43190.html" class="ville-card">
+                        <span class="ville-name">Tence</span>
+                        <span class="ville-zip">43190</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-thoras-43170.html" class="ville-card">
+                        <span class="ville-name">Thoras</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-tiranges-43530.html" class="ville-card">
+                        <span class="ville-name">Tiranges</span>
+                        <span class="ville-zip">43530</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-torsiac-43450.html" class="ville-card">
+                        <span class="ville-name">Torsiac</span>
+                        <span class="ville-zip">43450</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-valprivas-43210.html" class="ville-card">
+                        <span class="ville-name">Valprivas</span>
+                        <span class="ville-zip">43210</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vals-le-chastel-43230.html" class="ville-card">
+                        <span class="ville-name">Vals-le-Chastel</span>
+                        <span class="ville-zip">43230</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vals-pres-le-puy-43750.html" class="ville-card">
+                        <span class="ville-name">Vals-près-le-Puy</span>
+                        <span class="ville-zip">43750</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-varennes-saint-honorat-43270.html" class="ville-card">
+                        <span class="ville-name">Varennes-Saint-Honorat</span>
+                        <span class="ville-zip">43270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vazeilles-limandre-43320.html" class="ville-card">
+                        <span class="ville-name">Vazeilles-Limandre</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-venteuges-43170.html" class="ville-card">
+                        <span class="ville-name">Venteuges</span>
+                        <span class="ville-zip">43170</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vergezac-43320.html" class="ville-card">
+                        <span class="ville-name">Vergezac</span>
+                        <span class="ville-zip">43320</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vergongheon-43360.html" class="ville-card">
+                        <span class="ville-name">Vergongheon</span>
+                        <span class="ville-zip">43360</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vernassal-43270.html" class="ville-card">
+                        <span class="ville-name">Vernassal</span>
+                        <span class="ville-zip">43270</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vieille-brioude-43100.html" class="ville-card">
+                        <span class="ville-name">Vieille-Brioude</span>
+                        <span class="ville-zip">43100</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vielprat-43490.html" class="ville-card">
+                        <span class="ville-name">Vielprat</span>
+                        <span class="ville-zip">43490</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-villeneuve-d-allier-43380.html" class="ville-card">
+                        <span class="ville-name">Villeneuve-d'Allier</span>
+                        <span class="ville-zip">43380</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vissac-auteyrac-43300.html" class="ville-card">
+                        <span class="ville-name">Vissac-Auteyrac</span>
+                        <span class="ville-zip">43300</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vorey-43800.html" class="ville-card">
+                        <span class="ville-name">Vorey</span>
+                        <span class="ville-zip">43800</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-vezezoux-43390.html" class="ville-card">
+                        <span class="ville-name">Vézézoux</span>
+                        <span class="ville-zip">43390</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="../villes/agence-web-yssingeaux-43200.html" class="ville-card">
+                        <span class="ville-name">Yssingeaux</span>
+                        <span class="ville-zip">43200</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section-padding bg-primary text-white mt-5">
+        <div class="container text-center">
+            <h2 class="display-6 fw-bold mb-4">Besoin d'une agence web dans le Haute-Loire ?</h2>
+            <p class="lead mb-4">Contactez-nous pour un devis gratuit et personnalisé.</p>
+            <a href="../index.html#contact" class="btn btn-light btn-lg px-5">
+                <i class="bi bi-envelope"></i> Demander un Devis
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-globe2"></i> Agence Web France</h5>
+                    <p class="text-white-50">
+                        Votre partenaire de confiance pour tous vos projets web dans le Haute-Loire et partout en France.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white-50 text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="../index.html#services" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="../index.html#annuaire" class="text-white-50 text-decoration-none">Annuaire</a></li>
+                        <li class="mb-2"><a href="../index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> France</li>
+                        <li class="mb-2"><a href="tel:+33641127926" class="text-white-50 text-decoration-none"><i class="bi bi-telephone"></i> 06 41 12 79 26</a></li>
+                        <li class="mb-2"><a href="mailto:contact.capitainepub@gmail.com" class="text-white-50 text-decoration-none"><i class="bi bi-envelope"></i> contact.capitainepub@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <p class="text-center text-white-50 mb-0">
+                &copy; 2024 Agence Web France - Annuaire Haute-Loire. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filtrage des villes
+        document.getElementById('filterVilles').addEventListener('input', function() {
+            const filter = this.value.toLowerCase();
+            const cards = document.querySelectorAll('#villesGrid > div');
+
+            cards.forEach(card => {
+                const name = card.querySelector('.ville-name').textContent.toLowerCase();
+                const zip = card.querySelector('.ville-zip').textContent.toLowerCase();
+
+                if (name.includes(filter) || zip.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

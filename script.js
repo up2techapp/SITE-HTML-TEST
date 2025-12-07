@@ -4,6 +4,23 @@
  */
 
 // ===========================
+// Configuration EmailJS
+// ===========================
+const EMAILJS_CONFIG = {
+    publicKey: 'EbZUccJ9uKukb5WRE',
+    serviceId: 'service_btbtgzn',
+    templateId: 'template_m06wtf1'
+};
+
+// Initialiser EmailJS
+(function() {
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init(EMAILJS_CONFIG.publicKey);
+        console.log('✓ EmailJS initialisé');
+    }
+})();
+
+// ===========================
 // Variables globales
 // ===========================
 let lastScrollTop = 0;
@@ -147,22 +164,43 @@ function initContactForm() {
 
             // Récupérer les données du formulaire
             const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value || 'Non renseigné',
                 subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
+                message: document.getElementById('message').value,
+                page_origine: window.location.href
             };
 
-            // Simuler l'envoi du formulaire (à remplacer par un vrai appel API)
-            console.log('📧 Formulaire soumis:', formData);
+            // Désactiver le bouton pendant l'envoi
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Envoi en cours...';
 
-            // Afficher un message de succès
-            showNotification('Message envoyé avec succès! Nous vous répondrons dans les plus brefs délais.', 'success');
-
-            // Réinitialiser le formulaire
-            contactForm.reset();
-            contactForm.classList.remove('was-validated');
+            // Envoyer via EmailJS
+            if (typeof emailjs !== 'undefined') {
+                emailjs.send(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, formData)
+                    .then(function(response) {
+                        console.log('✓ Email envoyé:', response.status);
+                        showNotification('Message envoyé avec succès! Nous vous répondrons dans les plus brefs délais.', 'success');
+                        contactForm.reset();
+                        contactForm.classList.remove('was-validated');
+                    })
+                    .catch(function(error) {
+                        console.error('✗ Erreur EmailJS:', error);
+                        showNotification('Erreur lors de l\'envoi. Veuillez réessayer ou nous contacter par téléphone.', 'danger');
+                    })
+                    .finally(function() {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                    });
+            } else {
+                console.error('EmailJS non chargé');
+                showNotification('Erreur technique. Veuillez nous contacter par téléphone au 06 41 12 79 26.', 'danger');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
         });
     }
 }
@@ -349,17 +387,268 @@ if (logo) {
 }
 
 // ===========================
+// Annuaire - Recherche de villes
+// ===========================
+let villesData = null;
+let departementsData = null;
+
+// Charger les données des villes
+async function loadVillesData() {
+    try {
+        const response = await fetch('villes.json');
+        villesData = await response.json();
+        console.log(`✓ ${villesData.length} villes chargées`);
+    } catch (error) {
+        console.error('Erreur chargement villes:', error);
+    }
+}
+
+// Charger les données des départements
+async function loadDepartementsData() {
+    try {
+        const response = await fetch('departements.json');
+        departementsData = await response.json();
+        console.log(`✓ ${departementsData.length} départements chargés`);
+    } catch (error) {
+        console.error('Erreur chargement départements:', error);
+    }
+}
+
+// Initialiser la recherche de villes
+function initCitySearch() {
+    const searchInput = document.getElementById('citySearch');
+    const searchResults = document.getElementById('searchResults');
+
+    if (!searchInput || !searchResults) return;
+
+    let searchTimeout;
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+
+        clearTimeout(searchTimeout);
+
+        if (query.length < 2) {
+            searchResults.classList.remove('show');
+            searchResults.innerHTML = '';
+            return;
+        }
+
+        searchTimeout = setTimeout(() => {
+            if (!villesData) {
+                searchResults.innerHTML = '<div class="p-3 text-muted">Chargement...</div>';
+                searchResults.classList.add('show');
+                return;
+            }
+
+            // Rechercher les villes correspondantes
+            const results = villesData
+                .filter(v =>
+                    v.name.toLowerCase().includes(query) ||
+                    v.zip.includes(query)
+                )
+                .slice(0, 10); // Limiter à 10 résultats
+
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="p-3 text-muted">Aucune ville trouvée</div>';
+                searchResults.classList.add('show');
+                return;
+            }
+
+            // Afficher les résultats
+            searchResults.innerHTML = results.map(v => `
+                <a href="villes/agence-web-${v.slug}.html" class="search-result-item text-decoration-none">
+                    <span class="city-name">${v.name}</span>
+                    <span class="city-zip">${v.zip}</span>
+                </a>
+            `).join('');
+            searchResults.classList.add('show');
+        }, 300);
+    });
+
+    // Fermer les résultats si on clique ailleurs
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.remove('show');
+        }
+    });
+
+    // Navigation clavier
+    searchInput.addEventListener('keydown', function(e) {
+        const items = searchResults.querySelectorAll('.search-result-item');
+        const activeItem = searchResults.querySelector('.search-result-item.active');
+        let index = Array.from(items).indexOf(activeItem);
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            if (index < items.length - 1) {
+                items.forEach(i => i.classList.remove('active'));
+                items[index + 1].classList.add('active');
+                items[index + 1].scrollIntoView({ block: 'nearest' });
+            }
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (index > 0) {
+                items.forEach(i => i.classList.remove('active'));
+                items[index - 1].classList.add('active');
+                items[index - 1].scrollIntoView({ block: 'nearest' });
+            }
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (activeItem) {
+                window.location.href = activeItem.getAttribute('href');
+            } else if (items.length > 0) {
+                window.location.href = items[0].getAttribute('href');
+            }
+        }
+    });
+}
+
+// Initialiser les liens de départements
+function initDeptLinks() {
+    const deptLinks = document.querySelectorAll('.dept-link');
+    const modal = document.getElementById('deptModal');
+    const modalTitle = document.getElementById('deptModalTitle');
+    const modalContent = document.getElementById('deptModalContent');
+
+    if (!modal || !modalTitle || !modalContent) return;
+
+    const bsModal = new bootstrap.Modal(modal);
+
+    deptLinks.forEach(link => {
+        link.addEventListener('click', async function(e) {
+            e.preventDefault();
+            const deptCode = this.getAttribute('data-dept');
+            const deptName = this.textContent.trim();
+
+            modalTitle.textContent = deptName;
+            modalContent.innerHTML = '<div class="col-12 text-center"><div class="spinner-border text-primary" role="status"></div></div>';
+            bsModal.show();
+
+            // Charger les données si pas encore fait
+            if (!departementsData) {
+                await loadDepartementsData();
+            }
+
+            // Trouver le département
+            const dept = departementsData.find(d => d.code === deptCode);
+
+            if (dept && dept.villes) {
+                modalContent.innerHTML = dept.villes.map(v => `
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="villes/agence-web-${v.slug}.html">${v.name}</a>
+                    </div>
+                `).join('');
+            } else {
+                modalContent.innerHTML = '<div class="col-12 text-center text-muted">Aucune ville trouvée</div>';
+            }
+        });
+    });
+}
+
+// Charger les données et initialiser au démarrage
+document.addEventListener('DOMContentLoaded', function() {
+    loadVillesData();
+    initCitySearch();
+    initDeptLinks();
+});
+
+// ===========================
 // Exports pour modules (si nécessaire)
 // ===========================
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         showNotification,
         initScrollEffects,
-        initSmoothScroll
+        initSmoothScroll,
+        initCitySearch,
+        initDeptLinks
     };
 }
+
+// ===========================
+// Gestion des formulaires génériques (pages villes)
+// ===========================
+function initGenericForms() {
+    const genericForms = document.querySelectorAll('form:not(#contactForm)');
+
+    genericForms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Récupérer tous les champs du formulaire
+            const inputs = form.querySelectorAll('input, textarea, select');
+            const formData = {
+                from_name: '',
+                from_email: '',
+                phone: 'Non renseigné',
+                subject: 'Demande de devis',
+                message: '',
+                page_origine: window.location.href
+            };
+
+            inputs.forEach(input => {
+                const value = input.value.trim();
+                const placeholder = input.placeholder ? input.placeholder.toLowerCase() : '';
+                const type = input.type;
+
+                if (type === 'email' || placeholder.includes('email')) {
+                    formData.from_email = value;
+                } else if (type === 'tel' || placeholder.includes('téléphone') || placeholder.includes('phone')) {
+                    formData.phone = value || 'Non renseigné';
+                } else if (placeholder.includes('nom') || placeholder.includes('name')) {
+                    formData.from_name = value;
+                } else if (input.tagName === 'TEXTAREA' || placeholder.includes('projet') || placeholder.includes('message')) {
+                    formData.message = value;
+                } else if (input.tagName === 'SELECT') {
+                    formData.subject = value || 'Demande de devis';
+                }
+            });
+
+            // Validation basique
+            if (!formData.from_email || !formData.from_name) {
+                showNotification('Veuillez remplir les champs obligatoires (nom et email).', 'warning');
+                return;
+            }
+
+            // Désactiver le bouton pendant l'envoi
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Envoi...';
+
+            // Envoyer via EmailJS
+            if (typeof emailjs !== 'undefined') {
+                emailjs.send(EMAILJS_CONFIG.serviceId, EMAILJS_CONFIG.templateId, formData)
+                    .then(function(response) {
+                        console.log('✓ Email envoyé:', response.status);
+                        showNotification('Demande envoyée avec succès! Nous vous recontactons rapidement.', 'success');
+                        form.reset();
+                    })
+                    .catch(function(error) {
+                        console.error('✗ Erreur EmailJS:', error);
+                        showNotification('Erreur lors de l\'envoi. Appelez-nous au 06 41 12 79 26.', 'danger');
+                    })
+                    .finally(function() {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                    });
+            } else {
+                console.error('EmailJS non chargé');
+                showNotification('Erreur technique. Appelez-nous au 06 41 12 79 26.', 'danger');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        });
+    });
+}
+
+// Initialiser les formulaires génériques au chargement
+document.addEventListener('DOMContentLoaded', function() {
+    initGenericForms();
+});
 
 // Message de bienvenue dans la console
 console.log('%c🌐 Agence Web France', 'font-size: 20px; font-weight: bold; color: #0d6efd;');
 console.log('%cSite développé avec ❤️ et expertise', 'font-size: 14px; color: #6c757d;');
-console.log('%cVous cherchez à créer votre site? Contactez-nous!', 'font-size: 12px; color: #198754;');
+console.log('%cVous cherchez à créer votre site? Contactez-nous au 06 41 12 79 26!', 'font-size: 12px; color: #198754;');
