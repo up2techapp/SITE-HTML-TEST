@@ -208,9 +208,9 @@ def generate_dept_page(dept):
                 <div class="col-lg-4">
                     <h5 class="fw-bold mb-3">Contact</h5>
                     <ul class="list-unstyled text-white-50">
-                        <li class="mb-2"><i class="bi bi-geo-alt"></i> Paris, France</li>
-                        <li class="mb-2"><i class="bi bi-telephone"></i> +33 1 23 45 67 89</li>
-                        <li class="mb-2"><i class="bi bi-envelope"></i> contact@agencewebfrance.fr</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt"></i> France</li>
+                        <li class="mb-2"><a href="tel:+33641127926" class="text-white-50 text-decoration-none"><i class="bi bi-telephone"></i> 06 41 12 79 26</a></li>
+                        <li class="mb-2"><a href="mailto:contact.capitainepub@gmail.com" class="text-white-50 text-decoration-none"><i class="bi bi-envelope"></i> contact.capitainepub@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
